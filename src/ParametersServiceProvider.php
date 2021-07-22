@@ -34,11 +34,10 @@ class ParametersServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'hall-parameters');
 
         $this->publishes([
-            __DIR__.'/resources/lang' => resource_path('lang'),
+            __DIR__.'/resources/lang' => resource_path('lang/vendor/hall-parameters'),
         ]);
 
     }
-
 
 
 
