@@ -1,0 +1,20 @@
+{
+    "name": "tudy/hall-parameters",
+    "description": "Baliček pro výpočet paramerů haly",
+    "type": "library",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Tudy\\HallParameters\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tudy\\HallParameters\\ParametersServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+    }
+}
