@@ -23,10 +23,7 @@ Route::middleware('web')->group(function () {
             'index'   => 'hala-parametry.index',
             'show'    => 'hala-parametry.show',
             'create'  => 'hala-parametry.create',
-    //        'store'   => 'hala-parametry.store',
             'edit'    => 'hala-parametry.edit',
-      //      'update'  => 'hala-parametry.update',
-        //    'destroy' => 'hala-parametry.destroy',
         ]);
 
 });

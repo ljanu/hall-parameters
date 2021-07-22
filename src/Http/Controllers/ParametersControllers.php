@@ -47,7 +47,7 @@ class ParametersControllers extends Controller
      */
     public function store(Request $request)
     {
-        return redirect()->route(trans('hall-parameters.index'))
+        return redirect()->route(trans('t_h_p.routes.h_p_index'))
             ->with('success', 'položka uložena');
     }
 
@@ -94,7 +94,7 @@ class ParametersControllers extends Controller
      */
     public function update(Request $request, $id)
     {
-        return redirect()->route(trans('hall-parameters.index'))
+        return redirect()->route(trans('t_h_p.routes.h_p_index'))
             ->with('success', 'položka upravena');
 
     }
@@ -112,7 +112,7 @@ class ParametersControllers extends Controller
     public function destroy($id)
     {
 
-        return redirect()->route(trans('hall-parameters.index'))
+        return redirect()->route(trans('t_h_p.routes.h_p_index'))
             ->with('success', 'položka ostraněna');
     }
 }

@@ -33,6 +33,9 @@ class ParametersServiceProvider extends ServiceProvider
         //register translate
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'hall-parameters');
 
+        $this->publishes([
+            __DIR__.'/resources/lang' => resource_path('lang'),
+        ]);
 
     }
 

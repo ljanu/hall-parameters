@@ -9,23 +9,23 @@
         @endif
 
         {{-- header --}}
-        <h1>{{__('hall parameters')}}</h1>
-        <p class="text-center" >{{__('list of specified objects')}}</p>
+        <h1>{{__('t_h_p.text.hall_parameters')}}</h1>
+        <p class="text-center" >{{trans('t_h_p.text.list_object')}}</p>
 
 
         
         {{-- navigation --}}
-        <div><a href="{{route(trans('hall-parameters.create'))}}">{{__('new entry')}}</a></div>
-        <div><a href="{{route(trans('hall-parameters.edit'), '1')}}">{{__('edit entry')}}</a></div>
+        <div><a href=" {{route(trans('t_h_p.routes.h_p_create'))}}">{{trans('t_h_p.text.new_entry')}}</a></div>
+        <div><a href="{{route(trans('hall-parameters.edit'), '1')}}">{{trans('t_h_p.text.edit_entry')}}</a></div>
 
-        <form action="{{route('hall-parameters.destroy','1' )}}" method="post">
+
+        <form action="{{route(trans('t_h_p.routes.h_p_destroy'),'1' )}}" method="post">
             @csrf
             @method('delete')
 
-            <button type="submit">{{__('delete entry')}}</button>
+            <button type="submit">{{trans('t_h_p.text.delete_entry')}}</button>
 
         </form>
-
 
     </x-slot>
 </x-dynamic-component>
