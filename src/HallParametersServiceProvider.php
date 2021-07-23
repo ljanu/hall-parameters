@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 use Route;
 
 
-class ParametersServiceProvider extends ServiceProvider
+class HallParametersServiceProvider extends ServiceProvider
 {
 
     public function boot()
