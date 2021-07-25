@@ -5,12 +5,11 @@ namespace Tudy\HallParameters\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class  HallParametersController extends Controller
 {
 
-    public function index()
+    public function index() :string
     {
         return 'list objects';
     }
@@ -19,9 +18,9 @@ class  HallParametersController extends Controller
 
 
 
-    public function show($id)
+    public function show($hall_id) : string
     {
-        return "detail  object";
+        return "detail  object $hall_id";
     }
 
 }
