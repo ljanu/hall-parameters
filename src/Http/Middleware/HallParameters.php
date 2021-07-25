@@ -5,7 +5,6 @@ namespace Tudy\HallParameters\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class HallParameters
 {
@@ -15,9 +14,9 @@ class HallParameters
      * @param Request $request
      * @param Closure $next
      * @param int $role
-     * @return Response
+     * @return mixed
      */
-    public function handle(Request $request, Closure $next, int $role = 1): Response
+    public function handle(Request $request, Closure $next, int $role = 1): mixed
     {
         empty($role) ?? abort(403);
 
