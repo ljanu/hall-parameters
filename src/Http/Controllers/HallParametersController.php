@@ -5,22 +5,23 @@ namespace Tudy\HallParameters\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
+use Illuminate\View\View;
 
 class  HallParametersController extends Controller
 {
 
-    public function index() :string
+    public function index() : View
     {
-        return 'list objects';
+        return view('hall-parameters::index');
     }
 
 
 
 
 
-    public function show($hall_id) : string
+    public function show($hall_id) : View
     {
-        return "detail  object $hall_id";
+        return view('hall-parameters::show')->with('hall_id', $hall_id);
     }
 
 }

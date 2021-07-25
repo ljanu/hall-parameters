@@ -33,7 +33,7 @@ class HallParametersServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views', 'hall-parameters');
 
         //register configuration
-        $this->mergeConfigFrom(__DIR__ . '/config/hall.php', 'config_hall');
+        $this->mergeConfigFrom(__DIR__ . '/config/hall_parameters.php', 'config_hall');
 
         //register translate
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'hall-parameters');
