@@ -19,6 +19,7 @@ class HallParameters
      */
     public function handle(Request $request, Closure $next, int $role = 1): Response
     {
+        ddd($request);
         empty($role) ?? abort(403);
 
 
