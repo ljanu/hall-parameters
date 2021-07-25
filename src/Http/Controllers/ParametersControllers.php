@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-namespace Tudy\HallParameters\Http\Controllers;
+namespace Tudy\HallParameters\Http\Controllers\HallParameters\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
