@@ -14,7 +14,7 @@ Route::middleware('web')->group(function () {
             'edit'    => 'hall-parameters.edit',
             'update'  => 'hall-parameters.update',
             'destroy' => 'hall-parameters.destroy',
-        ]);
+        ])->middleware('hall-parameters');
 
     // language cs
     Route::resource('hala-parametry', ParametersControllers::class)

@@ -6,6 +6,7 @@ namespace Tudy\HallParameters;
 
 use Illuminate\Support\ServiceProvider;
 use Route;
+use Tudy\HallParameters\Http\Middleware\HallParameters;
 
 
 class HallParametersServiceProvider extends ServiceProvider
@@ -15,14 +16,18 @@ class HallParametersServiceProvider extends ServiceProvider
     {
         // translate route resources
         Route::resourceVerbs([
-            'show' => 'zobrazit',
+            'show'   => 'zobrazit',
             'create' => 'vytvorit',
-            'edit' => 'upravit',
+            'edit'   => 'upravit',
         ]);
 
 
         //register routs
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+
+        $this->app['router']->aliasMiddleware(
+            'hall-parameters', HallParameters::class
+        );
 
         //register views
         $this->loadViewsFrom(__DIR__ . '/views', 'hall-parameters');
