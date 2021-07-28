@@ -8,10 +8,12 @@
         <p>Formulář pro novou konstrukci</p>
 
 
-        <form action="{{route('construction.create')}}" method="post">
+        {{-- base form use --}}
+        <form action="{{route('construction.store')}}" method="post">
             @csrf
 
-            <input type="text">
+            <label for="test_1">test 1</label>
+            <input type="text" name="test_1">
 
             <button type="submit">Odeslat</button>
 

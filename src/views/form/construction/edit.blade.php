@@ -8,11 +8,12 @@
         <p>Formulář úpravu konstrukce id: {{$id}}</p>
 
         {{-- base form use --}}
-        <form action="{{route('construction.store')}}" method="post">
+        <form action="{{route('construction.update', $id)}}" method="post">
             @csrf
+            @method('put')
 
             <label for="form">Uprav</label>
-            <input type="text" id="form" name="id" value="John">
+            <input type="text" id="form" name="id" value="{{$id}}">
 
             <button type="submit">Upravit</button>
 
