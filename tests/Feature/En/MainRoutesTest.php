@@ -28,7 +28,6 @@ class MainRoutesTest extends TestCase
         $response->assertViewIs('hall-parameters::show');
         $response->assertViewHas('hall_id', $hall_id);
         $this->assertIsInt($hall_id);
-        //todo kontrola integer
         $response->assertStatus(200);
     }
 
