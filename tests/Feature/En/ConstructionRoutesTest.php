@@ -14,7 +14,6 @@ class ConstructionRoutesTest extends TestCase
     public function test_route_get_construction_create_en()
     {
         $response = $this->get('/hall-parameters/construction/create');
-//        $response->assertViewIs('construction::edit');
         $response->assertStatus(200);
     }
 
@@ -37,7 +36,6 @@ class ConstructionRoutesTest extends TestCase
     public function test_route_post_construction_store_en()
     {
         $response = $this->post('/hall-parameters/construction');
-
         $response->assertStatus(200);
     }
 
@@ -49,7 +47,6 @@ class ConstructionRoutesTest extends TestCase
     public function test_route_put_construction_update_en()
     {
         $response = $this->put('/hall-parameters/construction/1');
-
         $response->assertStatus(200);
     }
 
