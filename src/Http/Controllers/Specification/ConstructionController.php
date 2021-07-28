@@ -35,8 +35,7 @@ class  ConstructionController extends Controller
 
     public function edit($id)
     {
-        return 'úprava konstrukce: '. $id
-            ;
+        return 'úprava konstrukce: '. $id;
     }
 
 
