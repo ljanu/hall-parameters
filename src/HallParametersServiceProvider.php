@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Tudy\HallParameters;
 
+use App;
 use Illuminate\Support\ServiceProvider;
 use Route;
 use Tudy\HallParameters\Http\Middleware\HallParameters;
@@ -16,7 +17,7 @@ class HallParametersServiceProvider extends ServiceProvider
     {
         // translate route resources
 
-        if (\App::isLocale('cs')) {
+        if (App::isLocale('cs')) {
             Route::resourceVerbs([
                 'show'   => 'zobrazit',
                 'create' => 'vytvorit',
