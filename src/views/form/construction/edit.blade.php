@@ -5,13 +5,14 @@
         <h1>Vytvářím formulář úprava</h1>
 
 
-        <p>Formulář úpravu konstrukce</p>
+        <p>Formulář úpravu konstrukce id: {{$id}}</p>
 
-
-        <form action="{{route('construction.update')}}" method="post">
+        {{-- base form use --}}
+        <form action="{{route('construction.store')}}" method="post">
             @csrf
 
-            <input type="text">
+            <label for="form">Uprav</label>
+            <input type="text" id="form" name="id" value="John">
 
             <button type="submit">Upravit</button>
 
