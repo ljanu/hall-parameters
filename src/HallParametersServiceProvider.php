@@ -6,7 +6,7 @@ namespace Tudy\HallParameters;
 
 use Illuminate\Support\ServiceProvider;
 use Route;
-use Tudy\HallParameters\Http\Controllers\HallParameters\Http\Middleware\HallParameters;
+use Tudy\HallParameters\Http\Controllers\HallParameters\Http\Controllers\HallParameters\Http\Middleware\HallParameters;
 
 
 class HallParametersServiceProvider extends ServiceProvider
