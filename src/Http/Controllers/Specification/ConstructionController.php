@@ -6,6 +6,7 @@ namespace Tudy\HallParameters\Http\Controllers\Specification;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class  ConstructionController extends Controller
 {
@@ -15,7 +16,7 @@ class  ConstructionController extends Controller
 
 
 
-    public function create()
+    public function create() :View
     {
        return view('hall-parameters::form.construction.create');
     }
@@ -33,7 +34,7 @@ class  ConstructionController extends Controller
 
 
 
-    public function edit($id)
+    public function edit($id) :View
     {
         return view('hall-parameters::form.construction.edit')
             ->with('id', $id);
@@ -45,7 +46,7 @@ class  ConstructionController extends Controller
 
     public function update(Request $request, $id)
     {
-        ddd($request->all());
+        ddd($request->get($id));
     }
 
 }
