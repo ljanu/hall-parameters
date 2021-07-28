@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\En;
 
 use Tests\TestCase;
 
@@ -32,26 +32,6 @@ class MainRoutesTest extends TestCase
 
 
 
-
-    // lang cs
-    public function test_route_get_hall_parameters_cs()
-    {
-        $response = $this->get('/hala-parametry');
-        $response->assertViewIs('hall-parameters::index');
-        $response->assertStatus(200);
-    }
-
-
-
-
-
-    public function test_route_get_hall_parameters_hall_id_cs()
-    {
-        $response = $this->get('/hala-parametry/1');
-        $response->assertViewIs('hall-parameters::show');
-        $response->assertViewHas('hall_id', '1');
-        $response->assertStatus(200);
-    }
 
 
 
