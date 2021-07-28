@@ -5,7 +5,8 @@
 
         {{-- url construction for testing--}}
         <ul>
-            <li><a href="{{route("construction.create")}}"> Nová konstrukce</a></li>
+            <li><a href="{{route("construction.create")}}"> úprava konstrukce</a></li>
+            <li><a href="{{route("construction.edit", '1')}}"> úprava konstrukce id :1</a></li>
         </ul>
 
 
