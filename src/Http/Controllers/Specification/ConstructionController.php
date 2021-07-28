@@ -10,10 +10,6 @@ use Illuminate\Http\Request;
 class  ConstructionController extends Controller
 {
 
-    public function index()
-    {
-        //
-    }
 
 
 
@@ -21,7 +17,7 @@ class  ConstructionController extends Controller
 
     public function create()
     {
-        //
+       return 'nová konstrukce';
     }
 
 
@@ -37,18 +33,10 @@ class  ConstructionController extends Controller
 
 
 
-    public function show($id)
-    {
-        //
-    }
-
-
-
-
-
     public function edit($id)
     {
-        //
+        return 'úprava konstrukce: '. $id
+            ;
     }
 
 
@@ -60,12 +48,4 @@ class  ConstructionController extends Controller
         //
     }
 
-
-
-
-
-    public function destroy($id)
-    {
-        //
-    }
 }
