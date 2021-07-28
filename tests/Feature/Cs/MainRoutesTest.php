@@ -24,9 +24,11 @@ class MainRoutesTest extends TestCase
 
     public function test_route_get_hall_parameters_hall_id_cs()
     {
+        $hall_id = 1;
         $response = $this->get('/hala-parametry/1');
         $response->assertViewIs('hall-parameters::show');
-        $response->assertViewHas('hall_id', '1');
+        $response->assertViewHas('hall_id', $hall_id);
+        $this->assertIsInt($hall_id);
         $response->assertStatus(200);
     }
 
