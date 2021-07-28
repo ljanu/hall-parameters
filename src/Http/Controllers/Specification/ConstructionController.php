@@ -17,7 +17,7 @@ class  ConstructionController extends Controller
 
     public function create()
     {
-       return 'nová konstrukce';
+       return view('hall-parameters::form.construction.create');
     }
 
 
@@ -26,7 +26,7 @@ class  ConstructionController extends Controller
 
     public function store(Request $request)
     {
-        //
+        ddd($request->all());
     }
 
 
@@ -35,7 +35,7 @@ class  ConstructionController extends Controller
 
     public function edit($id)
     {
-        return 'úprava konstrukce: '. $id;
+        return view('hall-parameters::form.construction.edit');
     }
 
 
