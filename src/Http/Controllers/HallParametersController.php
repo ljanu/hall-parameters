@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Tudy\HallParameters\Http\Controllers;
+namespace Tudy\HallParameters\Http\Controllers\Specification\HallParameters\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;

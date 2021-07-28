@@ -1,6 +1,6 @@
 <?php
 
-use Tudy\HallParameters\Http\Controllers\HallParametersController;
+use Tudy\HallParameters\Http\Controllers\Specification\HallParameters\Http\Controllers\HallParametersController;
 
 Route::middleware('web')->group(function () {
 

@@ -2,11 +2,11 @@
 declare(strict_types=1);
 
 
-namespace Tudy\HallParameters;
+namespace Tudy\HallParameters\Http\Controllers\Specification\HallParameters;
 
 use Illuminate\Support\ServiceProvider;
 use Route;
-use Tudy\HallParameters\Http\Controllers\HallParameters\Http\Controllers\HallParameters\Http\Middleware\HallParameters;
+use Tudy\HallParameters\Http\Controllers\Specification\HallParameters\Http\Controllers\HallParameters\Http\Controllers\HallParameters\Http\Middleware\HallParameters;
 
 
 class HallParametersServiceProvider extends ServiceProvider
