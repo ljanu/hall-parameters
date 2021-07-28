@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Tudy\HallParameters\Http\Controllers\Specification\HallParameters\Http\Controllers\HallParameters\Http\Controllers\HallParameters\Http\Middleware;
+namespace Tudy\HallParameters\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
