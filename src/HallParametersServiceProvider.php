@@ -15,11 +15,15 @@ class HallParametersServiceProvider extends ServiceProvider
     public function boot()
     {
         // translate route resources
-        Route::resourceVerbs([
-            'show'   => 'zobrazit',
-            'create' => 'vytvorit',
-            'edit'   => 'upravit',
-        ]);
+
+        if (\App::isLocale('cs')) {
+            Route::resourceVerbs([
+                'show'   => 'zobrazit',
+                'create' => 'vytvorit',
+                'edit'   => 'upravit',
+            ]);
+        }
+
 
 
         //register routs
