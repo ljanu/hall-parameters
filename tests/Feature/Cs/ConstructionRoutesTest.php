@@ -2,7 +2,6 @@
 
 namespace Tests\Feature\Cs;
 
-use Illuminate\Support\Facades\App;
 use Tests\TestCase;
 
 
@@ -14,7 +13,7 @@ class ConstructionRoutesTest extends TestCase
     public function test_route_get_construction_create_cs()
     {
         $response = $this->get('/hala-parametry/konstrukce/vytvorit');
-//        $response->assertViewIs('construction::edit');
+        $response ->assertViewIs('hall-parameters::form.construction.create');
         $response->assertStatus(200);
     }
 
@@ -25,6 +24,7 @@ class ConstructionRoutesTest extends TestCase
     public function test_route_get_construction_edit_cs()
     {
         $response = $this->get('/hala-parametry/konstrukce/1/upravit');
+        $response->assertViewIs('hall-parameters::form.construction.edit');
         $response->assertStatus(200);
     }
 

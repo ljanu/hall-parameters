@@ -2,7 +2,6 @@
 
 namespace Tests\Feature\En;
 
-use Illuminate\Support\Facades\App;
 use Tests\TestCase;
 
 
@@ -14,6 +13,7 @@ class ConstructionRoutesTest extends TestCase
     public function test_route_get_construction_create_en()
     {
         $response = $this->get('/hall-parameters/construction/create');
+        $response ->assertViewIs('hall-parameters::form.construction.create');
         $response->assertStatus(200);
     }
 
@@ -24,6 +24,7 @@ class ConstructionRoutesTest extends TestCase
     public function test_route_get_construction_edit_en()
     {
         $response = $this->get('/hall-parameters/construction/1/edit');
+        $response->assertViewIs('hall-parameters::form.construction.edit');
         $response->assertStatus(200);
     }
 
