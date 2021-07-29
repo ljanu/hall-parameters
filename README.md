@@ -18,6 +18,11 @@ instalace komponenty
 
 ---
 
+aktualizace komponenty
+
+'composer update'
+
+
 ### Publikovéní veřejného majetku
 
 publikovat bez přepsání stávajících souborů
