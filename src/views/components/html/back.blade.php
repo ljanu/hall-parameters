@@ -1,5 +1,7 @@
 {{-- the components returns to the previous page  --}}
 
-<div>
-    <a href="{{URL::previous()}}"> <-  ZPĚT</a>
+<div class="py-1">
+    <a href="{{URL::previous()}}">
+        <x-hall-parameters::helpers.icon name="back"/>
+    </a>
 </div>
