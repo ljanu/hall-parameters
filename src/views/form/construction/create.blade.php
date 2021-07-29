@@ -2,7 +2,7 @@
     <x-slot name="content">
 
        {{-- content testing --}}
-        <h1>Vytvářím nový formulář</h1>
+        <h1>Nové zadání konstrukce</h1>
 
 
         <p>Formulář pro novou konstrukci</p>

@@ -2,7 +2,7 @@
     <x-slot name="content">
 
         {{-- content testing --}}
-        <h1>Vytvářím formulář úprava</h1>
+        <h1>Úprava dat konstrukce</h1>
 
 
         <p>Formulář úpravu konstrukce id: {{$id}}</p>
