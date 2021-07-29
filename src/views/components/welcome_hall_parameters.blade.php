@@ -2,6 +2,7 @@
     <x-slot :name="config('config_hall.slot_name')">
 
        <div class="border-t border-red-500">
+
            <x-hall-parameters::html.back/>
 
 
