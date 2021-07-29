@@ -41,12 +41,10 @@ Route::middleware('web')->group(function () {
 
         //construction
         Route::resource('konstrukce', ConstructionController::class)
-            ->except('index', "show", 'destroy')
+            ->except('index', "show", 'store',"update", 'destroy')
             ->names([
                 'create'  => 'konstrukce.create',
-                'store'   => 'konstrukce.store',
                 'edit'    => 'konstrukce.edit',
-                'update'  => 'konstrukce.update',
             ]);
 
     });
