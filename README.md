@@ -10,16 +10,29 @@ Soubory překladu jsou při vývoji  umístěny `resources/land/` pro funkci v j
 
 ---
 
-
-
 ### Instalace
 
 instalace komponenty
 
 `composer require tudy/hall-parameters`
 
-publikování překladů
+---
+
+### Publikovéní veřejného majetku
+
+publikovat bez přepsání stávajících souborů
 
 `php artisan vendor:publish`
 
-přepsání stávajících překladových souborů
+Publikování s přepsáním stávajících souborů
+
+`php artisan vendor:publish --force`
+
+Publikování jednotlivých složek
+
+```shell
+php artisan vendor:publish --tag=lang --force
+php artisan vendor:publish --tag=config --force
+```
+
+---
