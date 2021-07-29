@@ -43,9 +43,12 @@ class HallParametersServiceProvider extends ServiceProvider
         //register translate
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'hall-parameters');
 
-        $this->publishes([
-            __DIR__.'/resources/lang' => resource_path('lang/'),
-        ]);
+        $this->publishes([__DIR__ . '/resources/lang' => resource_path('lang/')],
+            'lang'
+        );
+
+        $this->publishes([__DIR__ . '/config/hall_parameters.php' => config_path('hall_parameters.php')],
+            'config');
 
     }
 
