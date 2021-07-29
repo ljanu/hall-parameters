@@ -38,6 +38,7 @@ Publikování jednotlivých složek
 ```shell
 php artisan vendor:publish --tag=lang --force
 php artisan vendor:publish --tag=config --force
+php artisan vendor:publish --tag=icons --force
 ```
 
 ---
