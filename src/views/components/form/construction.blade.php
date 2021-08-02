@@ -28,7 +28,7 @@
 
             {{-- dimension -------------------------------------------------------------------------------------------}}
             <fieldset class="py-10 ">
-                <div class="mb-5 text-blue-700 dark:text-blue-300">rozměry</div>
+                <div class="m-title">rozměry</div>
 
                 {{-- dimension --}}
                 <div class="flex flex-col items-center md:flex-row ">
@@ -66,7 +66,7 @@
             {{-- rooof type ------------------------------------------------------------------------------------------}}
             <fieldset class="mt-14">
 
-                <div class="mb-5 text-blue-700 dark:text-blue-300">typ střechy</div>
+                <div class="m-title">typ střechy</div>
 
                 {{-- roof type --}}
                 <div class="flex flex-row justify-center">
@@ -105,7 +105,7 @@
 
             {{-- limitations -----------------------------------------------------------------------------------------}}
             <fieldset class="mt-10">
-                <div class="mb-5 text-blue-700 dark:text-blue-300">omezení</div>
+                <div class="m-title">omezení</div>
 
                 {{-- limitations --}}
                 <div class="grid grid-cols-2">
