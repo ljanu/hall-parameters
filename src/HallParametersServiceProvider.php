@@ -51,7 +51,7 @@ class HallParametersServiceProvider extends ServiceProvider
             'config');
 
         $this->publishes([__DIR__.'/resources/images/hall-parameters/icons' =>
-                              public_path('images/hall-parameters/icons/')],
+                              public_path('images/hall-parameters/')],
         'icons');
 
     }
