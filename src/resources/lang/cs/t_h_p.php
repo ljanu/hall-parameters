@@ -29,6 +29,18 @@ return [
 
         // construction
         "construction_parameters" => "parametry konstrukce",
-
+        "dimension"           => "rozměry",
+        "width"               => "šířka",
+        "length"              => "délka",
+        "height"              => "výška",
+        "roof_type"           => "typ střechy",
+        "gable_roof"          => "sedlová střecha",
+        "flat_roof_left"      => "pultová střecha se sklonem do leva",
+        "flat_roof_right"     => "putlová střecha se sklonem do prava",
+        "limitations"         => "omezení",
+        "roof_pitch"          => "sklon sgřechy",
+        "max_module_size"     => "max vzdálenost modulu",
+        "max_purlin_size"     => "max vzdálenost vaznic",
+        "max_side_rails_size" => "max vzdálenost vazniček",
     ),
 ];
