@@ -8,8 +8,9 @@
     'colorHoverDark' => 'white',
 ])
 @php
-  $path = asset("/images/hall-parameters/icons/$name.svg") ;
-  $svg = file_get_contents( $path);
+
+$path = base_path("/public/images/hall-parameters/icons/$name.svg");
+$svg = file_get_contents( $path);
 
 @endphp
 
