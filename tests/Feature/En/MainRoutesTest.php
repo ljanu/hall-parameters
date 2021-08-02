@@ -12,6 +12,7 @@ class MainRoutesTest extends TestCase
     //lang en
     public function test_route_get_hall_parameters_en()
     {
+        // $this->withoutExceptionHandling();
         $response = $this->get('/hall-parameters');
         $response->assertViewIs('hall-parameters::index');
         $response->assertStatus(200);

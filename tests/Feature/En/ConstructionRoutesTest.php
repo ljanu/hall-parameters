@@ -12,6 +12,7 @@ class ConstructionRoutesTest extends TestCase
 
     public function test_route_get_construction_create_en()
     {
+        // $this->withoutExceptionHandling();
         $response = $this->get('/hall-parameters/construction/create');
         $response ->assertViewIs('hall-parameters::form.construction.create');
         $response->assertStatus(200);
