@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50" viewBox="0 0 26.458 13.229">
+    <defs>
+        <marker id="e" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M4 0l2-2-7 2 7 2z" fill="#10b981" fill-rule="evenodd" stroke="#10b981" stroke-width=".4pt"/>
+        </marker>
+        <marker id="b" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M-4 0l-2 2 7-2-7-2z" fill="#fbbf24" fill-rule="evenodd" stroke="#fbbf24" stroke-width=".4pt"/>
+        </marker>
+        <marker id="a" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M4 0l2-2-7 2 7 2z" fill="#fbbf24" fill-rule="evenodd" stroke="#fbbf24" stroke-width=".4pt"/>
+        </marker>
+        <marker id="d" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M-4 0l-2 2 7-2-7-2z" fill="#ef4444" fill-rule="evenodd" stroke="#ef4444" stroke-width=".4pt"/>
+        </marker>
+        <marker id="c" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M4 0l2-2-7 2 7 2z" fill="#ef4444" fill-rule="evenodd" stroke="#ef4444" stroke-width=".4pt"/>
+        </marker>
+        <marker id="f" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M-4 0l-2 2 7-2-7-2z" fill="#10b981" fill-rule="evenodd" stroke="#10b981" stroke-width=".4pt"/>
+        </marker>
+    </defs>
+    <g fill="none">
+        <path d="M3.704 10.588h13.237v0" stroke="#3b82f6" stroke-width=".529" stroke-linecap="square"/>
+        <path d="M16.934 10.419V.82" stroke="#3b82f6" stroke-width=".582" stroke-linecap="round"/>
+        <path d="M3.704 10.588V2.65" stroke="#3b82f6" stroke-width=".529" stroke-linecap="round"/>
+        <path d="M3.941 12.288h12.323" stroke="#fbbf24" stroke-width=".255" marker-start="url(#a)"
+              marker-end="url(#b)"/>
+        <path d="M2.034 2.668v7.254" stroke="#ef4444" stroke-width=".28" marker-start="url(#c)" marker-end="url(#d)"/>
+        <path d="M18.179 11.887l7.305-4.218" stroke="#10b981" stroke-width=".265" marker-start="url(#e)"
+              marker-end="url(#f)"/>
+        <path d="M3.704 2.65L16.934.82" stroke="#3b82f6" stroke-width=".529"/>
+    </g>
+</svg>
