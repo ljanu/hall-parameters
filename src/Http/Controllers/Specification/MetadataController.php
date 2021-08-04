@@ -13,9 +13,9 @@ class  MetadataController extends Controller
 {
 
 
-    public function create()
+    public function create() :View
     {
-        //
+        return view('hall-parameters::metadata.create');
     }
 
 
@@ -33,7 +33,8 @@ class  MetadataController extends Controller
 
     public function edit($id)
     {
-       //
+       return view('hall-parameters::metadata.edit')
+           ->with("id", $id);
     }
 
 
