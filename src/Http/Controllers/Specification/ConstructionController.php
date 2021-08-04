@@ -27,7 +27,7 @@ class  ConstructionController extends Controller
 
     public function store(Request $request)
     {
-      //  ddd($request->all());
+      return $request;
     }
 
 
