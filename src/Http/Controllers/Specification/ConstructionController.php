@@ -14,7 +14,7 @@ class  ConstructionController extends Controller
 
     public function create(): View
     {
-        return view('hall-parameters::form.construction.create');
+        return view('hall-parameters::construction.create');
     }
 
 
@@ -32,7 +32,7 @@ class  ConstructionController extends Controller
 
     public function edit($id): View
     {
-        return view('hall-parameters::form.construction.edit')
+        return view('hall-parameters::construction.edit')
             ->with('id', $id);
     }
 

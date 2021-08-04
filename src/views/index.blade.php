@@ -15,6 +15,9 @@
                     {{trans("t_h_p.text.edit_project")}}
                 </a>
             </li>
+            <li>
+                <a href = "{{route("metadata.create")}}" > new Metadata</a >
+            </li>
         </ul>
 
 
