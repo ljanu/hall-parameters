@@ -14,7 +14,7 @@ class MetadataRoutesTest extends TestCase
     {
         // $this->withoutExceptionHandling();
         $response = $this->get('/hall-parameters/metadata/create');
-//        $response ->assertViewIs('hall-parameters::form.construction.create');
+        $response ->assertViewIs('hall-parameters::metadata.create');
         $response->assertStatus(200);
     }
 
@@ -25,7 +25,7 @@ class MetadataRoutesTest extends TestCase
     public function test_route_get_metadata_edit_en()
     {
         $response = $this->get('/hall-parameters/metadata/1/edit');
-      //  $response->assertViewIs('hall-parameters::form.construction.edit');
+        $response->assertViewIs('hall-parameters::metadata.edit');
         $response->assertStatus(200);
     }
 
