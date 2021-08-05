@@ -275,8 +275,8 @@
 
                     <input
                             type = "number"
-                            id = "fire_resistance_cladding"
-                            name = "fire_resistance_cladding"
+                            id = "fire_resistance_construction"
+                            name = "fire_resistance_construction"
                             autofocus
                             class = "w-56"
                             value = ""
