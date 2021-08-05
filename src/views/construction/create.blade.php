@@ -7,7 +7,7 @@
         <div class="text-center">{{trans("t_h_p.text.new")}}</div>
 
 
-        {{-- form comstruction --}}
+        {{-- form construction --}}
         <x-hall-parameters::form.construction method="post"/>
 
     </x-slot>
