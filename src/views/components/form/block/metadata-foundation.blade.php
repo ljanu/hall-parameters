@@ -7,17 +7,18 @@
     <div class = "m-base grid grid-cols-2 self-center" >
         {{-- claen floor --}}
         <label
-                for = "clean_floor"
-                class = "text-right self-center" >clean floor
+                for = "height_floor"
+                class = "text-right self-center" >height floor
         </label >
 
         <input
-                type = "text"
-                id = "clean_floor"
-                name = "clean_floor"
+                type = "number"
+                id = "height_floor"
+                name = "height_floor"
                 autofocus
                 class = "w-56"
                 value = ""
+                step = "0.01"
         >
 
         {{-- bottom edge facade --}}
@@ -33,7 +34,7 @@
                 autofocus
                 class = "w-56"
                 value = ""
-                size = "0.01"
+                step = "0.01"
         >
 
     </div >

@@ -19,9 +19,9 @@
                 id = "color_roof"
                 class = "w-56"
         >
-            <option value = "1" >RAL 9002</option >
-            <option value = "1" >RAL 9006</option >
-            <option value = "1" >RAL 9007</option >
+            <option value = "9002" >RAL 9002</option >
+            <option value = "9002" >RAL 9006</option >
+            <option value = "9002" >RAL 9007</option >
         </select >
 
 
