@@ -21,7 +21,8 @@
 
 
             {{-- specification -------------------------------------------------------------------------------------------}}
-            <x-hall-parameters::form.block.specification/>
+            <x-hall-parameters::form.block.metadata-specification />
+
 
 
             {{-- color design -----------------------------------------------------------------------------------------------}}
