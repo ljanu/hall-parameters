@@ -1,5 +1,7 @@
 {{-- component color design --}}
 
+@php($colorsCladding = config('config_hall.ral_base'))
+
 <fieldset class = "m-base" >
 
     <div class = "m-title" >color design</div >
@@ -19,9 +21,11 @@
                 id = "color_roof"
                 class = "w-56"
         >
-            <option value = "9002" >RAL 9002</option >
-            <option value = "9002" >RAL 9006</option >
-            <option value = "9002" >RAL 9007</option >
+            @foreach ($colorsCladding as $color)
+                <option
+                        class = "{{'ral-'.$color}}"
+                        value = "{{$color}}" >RAL {{$color}}</option >
+            @endforeach
         </select >
 
 
@@ -35,9 +39,11 @@
                 id = "color_walls"
                 class = "w-56"
         >
-            <option value = "1" >RAL 9002</option >
-            <option value = "1" >RAL 9006</option >
-            <option value = "1" >RAL 9007</option >
+            @foreach ($colorsCladding as $color)
+                <option
+                        class = "{{'ral-'.$color}}"
+                        value = "{{$color}}" >RAL {{$color}}</option >
+            @endforeach
         </select >
 
 
@@ -51,9 +57,11 @@
                 id = "color_fill"
                 class = "w-56"
         >
-            <option value = "1" >RAL 9002</option >
-            <option value = "1" >RAL 9006</option >
-            <option value = "1" >RAL 9007</option >
+            @foreach ($colorsCladding as $color)
+                <option
+                        class = "{{'ral-'.$color}}"
+                        value = "{{$color}}" >RAL {{$color}}</option >
+            @endforeach
         </select >
 
 
@@ -67,9 +75,11 @@
                 id = "color_edges"
                 class = "w-56"
         >
-            <option value = "1" >RAL 9002</option >
-            <option value = "1" >RAL 9006</option >
-            <option value = "1" >RAL 9007</option >
+            @foreach ($colorsCladding as $color)
+                <option
+                        class = "{{'ral-'.$color}}"
+                        value = "{{$color}}" >RAL {{$color}}</option >
+            @endforeach
         </select >
 
 
@@ -83,9 +93,8 @@
                 id = "color_construction"
                 class = "w-56"
         >
-            <option value = "1" >RAL 9002</option >
-            <option value = "1" >RAL 9006</option >
-            <option value = "1" >RAL 9007</option >
+            <option
+                    value = "7035" >RAL 7038</option >
         </select >
 
     </div >
