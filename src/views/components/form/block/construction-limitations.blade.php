@@ -15,7 +15,9 @@
                 id = "roof_pitch"
                 name = "roof_pitch"
                 class = "w-36"
-                value = "" >
+                value = ""
+                min = "0"
+        >
 
         {{-- max module --}}
         <label
@@ -26,7 +28,9 @@
                 id = "max_module"
                 name = "max_module"
                 class = "w-36"
-                value = "" >
+                value = ""
+                min = "0"
+        >
 
         {{-- max gap purlin --}}
         <label
@@ -38,7 +42,8 @@
                 name = "max_gap_purlin"
                 class = "w-36"
                 value = ""
-                step = "0.01" >
+                step = "0.01"
+                min = "0" >
 
         {{-- max gap side rails --}}
         <label
@@ -50,7 +55,9 @@
                 name = "max_gap_side_rails"
                 class = "w-36"
                 value = ""
-                step = "0.01" >
+                step = "0.01"
+                min = "0"
+        >
 
     </div >
 

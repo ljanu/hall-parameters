@@ -33,6 +33,7 @@
                 autofocus
                 class = "w-56"
                 value = ""
+                min="0"
         >
 
         {{--  fire resistance walls --}}
@@ -48,6 +49,7 @@
                 autofocus
                 class = "w-56"
                 value = ""
+                min="0"
         >
 
     </div >

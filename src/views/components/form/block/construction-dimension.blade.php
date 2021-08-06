@@ -25,6 +25,7 @@
                     placeholder = "{{trans("t_h_p.text.width")}} (m)"
                     value = ""
                     step = "0.01"
+                    min = "0"
             >
 
         </div >
@@ -47,6 +48,7 @@
                     placeholder = "{{trans("t_h_p.text.length")}} (m)"
                     value = ""
                     step = "0.01"
+                    min = "0"
             >
 
         </div >
@@ -66,7 +68,10 @@
                     class = "w-36"
                     placeholder = "{{trans("t_h_p.text.height")}} (m)"
                     value = ""
-                    step = "0.01" >
+                    step = "0.01"
+                    min = "0"
+            >
+
         </div >
 
     </div >
