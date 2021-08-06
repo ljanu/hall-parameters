@@ -2,16 +2,16 @@
 
 <fieldset class = "m-base" >
 
-    <div class = "m-title" >specification</div >
+    <div class = "m-title" >{{trans("t_h_p.text.specification")}}</div >
 
     {{-- wrap basic items --}}
     <div class = "grid grid-cols-2" >
 
 
-        {{-- name --}}
+        {{-- name object --}}
         <label
                 for = "name"
-                class = "text-right self-center" >name object
+                class = "text-right self-center" > {{trans("t_h_p.text.name_object")}}
         </label >
 
         <input
@@ -27,7 +27,7 @@
         {{-- roof load --}}
         <label
                 for = "roof_load"
-                class = "text-right self-center" > roof load
+                class = "text-right self-center" > {{trans("t_h_p.text.roof_load")}}
         </label >
 
         <select
@@ -35,26 +35,28 @@
                 id = "roof_load"
                 class = "w-56"
         >
-            <option value = "1" >zatížení 100 kg/m2</option >
-            <option value = "1" >zatížení 100 kg/m2</option >
-            <option value = "1" >zatížení 100 kg/m2</option >
-            <option value = "1" >zatížení 100 kg/m2</option >
+            <option value = "1" >{{trans("t_h_p.text.load")}} 100 kg/m2</option >
+            <option value = "1" >{{trans("t_h_p.text.load")}} 200 kg/m2</option >
+            <option value = "1" >{{trans("t_h_p.text.load")}} 300 kg/m2</option >
+            <option value = "1" >{{trans("t_h_p.text.load")}} 400 kg/m2</option >
+            <option value = "1" >{{trans("t_h_p.text.load")}} 500 kg/m2</option >
+            <option value = "1" >{{trans("t_h_p.text.load")}} 600 kg/m2</option >
         </select >
 
 
         {{-- insulates --}}
         <label
                 for = "insulated"
-                class = "text-right self-center" >insulated
+                class = "text-right self-center" >{{trans("t_h_p.text.insulated")}}
         </label >
         <select
                 name = "insulated"
                 id = "insulated"
                 class = "w-56"
         >
-            <option value = "1" >zateplená</option >
-            <option value = "1" >nezateplená</option >
-            <option value = "1" >částečně zateplená</option >
+            <option value = "1" >{{trans("t_h_p.text.yes")}}</option >
+            <option value = "1" >{{trans("t_h_p.text.no")}}</option >
+            <option value = "1" >{{trans("t_h_p.text.partly")}}</option >
         </select >
 
     </div >

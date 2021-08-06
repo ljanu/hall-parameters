@@ -4,7 +4,7 @@
 
 <fieldset class = "m-base" >
 
-    <div class = "m-title" >color design</div >
+    <div class = "m-title" >{{trans("t_h_p.text.basic_color_design")}}</div >
 
     {{-- wrap colors --}}
     <div class = "grid grid-cols-2 self-center" >
@@ -13,7 +13,7 @@
         {{-- roof --}}
         <label
                 for = "color_roof"
-                class = "text-right self-center" >color roof
+                class = "text-right self-center" >{{trans("t_h_p.text.color_roof")}}
         </label >
 
         <select
@@ -32,7 +32,7 @@
         {{-- walls --}}
         <label
                 for = "color_walls"
-                class = "text-right self-center" >color walls
+                class = "text-right self-center" >{{trans("t_h_p.text.color_walls")}}
         </label >
         <select
                 name = "color_walls"
@@ -50,7 +50,7 @@
         {{-- fill --}}
         <label
                 for = "color_fill"
-                class = "text-right self-center" >color fill
+                class = "text-right self-center" >{{trans("t_h_p.text.color_fill")}}
         </label >
         <select
                 name = "color_fill"
@@ -68,7 +68,7 @@
         {{-- edges --}}
         <label
                 for = "color_edges"
-                class = "text-right self-center" >color edges
+                class = "text-right self-center" >{{trans("t_h_p.text.color_edges")}}
         </label >
         <select
                 name = "color_edges"
@@ -86,7 +86,7 @@
         {{-- construction --}}
         <label
                 for = "color_construction"
-                class = "text-right self-center" >color construction
+                class = "text-right self-center" >{{trans("t_h_p.text.color_construction")}}
         </label >
         <select
                 name = "color_construction"

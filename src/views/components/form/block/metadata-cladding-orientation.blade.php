@@ -2,7 +2,7 @@
 
 <fieldset class = "m-base" >
 
-    <div class = "m-title" >cladding orientation</div >
+    <div class = "m-title" >{{trans("t_h_p.text.cladding_orientation")}}</div >
 
     {{-- orintation facade profile --}}
     <div class = "flex flex-row justify-center" >

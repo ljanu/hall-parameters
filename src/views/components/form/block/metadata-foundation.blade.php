@@ -2,13 +2,13 @@
 
 <fieldset class="m-base" >
 
-    <div class = "m-title" >foundation of the build</div >
+    <div class = "m-title" >{{trans("t_h_p.text.foundation_build")}}</div >
 
     <div class = "m-base grid grid-cols-2 self-center" >
-        {{-- claen floor --}}
+        {{-- height floor --}}
         <label
                 for = "height_floor"
-                class = "text-right self-center" >height floor
+                class = "text-right self-center" >{{trans("t_h_p.text.height_floor")}}
         </label >
 
         <input
@@ -19,12 +19,13 @@
                 class = "w-56"
                 value = ""
                 step = "0.01"
+                min="0"
         >
 
         {{-- bottom edge facade --}}
         <label
                 for = "bottom_edge_facade"
-                class = "text-right self-center" > bottom edge facade
+                class = "text-right self-center" > {{trans("t_h_p.text.bottom_edge_facade")}}
         </label >
 
         <input
@@ -35,6 +36,7 @@
                 class = "w-56"
                 value = ""
                 step = "0.01"
+                min="0"
         >
 
     </div >
