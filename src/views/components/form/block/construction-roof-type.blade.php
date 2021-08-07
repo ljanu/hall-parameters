@@ -1,8 +1,7 @@
 {{-- component roof type --}}
 
-<fieldset class = "mt-14" >
-
-    <div class = "m-title" >{{trans("t_h_p.text.roof_type")}}</div >
+<fieldset class = "m-base" >
+    <legend class = "m-title" >{{trans("t_h_p.text.roof_type")}}</legend >
 
     {{-- roof type --}}
     <div class = "flex flex-row justify-center" >

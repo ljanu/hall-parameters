@@ -1,7 +1,7 @@
 {{-- component construction dimension --}}
 
-<fieldset class = "py-10 " >
-    <div class = "m-title" >{{trans("t_h_p.text.dimension")}}</div >
+<fieldset class = "m-base " >
+    <legend class = "m-title" >{{trans("t_h_p.text.dimension")}}</legend >
 
     {{-- dimension --}}
     <div class = "flex flex-col items-center md:flex-row " >

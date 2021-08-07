@@ -1,7 +1,7 @@
 {{-- component construction limitations --}}
 
-<fieldset class = "mt-10" >
-    <div class = "m-title" >{{trans("t_h_p.text.limitations")}}</div >
+<fieldset class = "m-base" >
+    <legend class = "m-title" >{{trans("t_h_p.text.limitations")}}</legend >
 
     {{-- limitations --}}
     <div class = "grid grid-cols-2" >
