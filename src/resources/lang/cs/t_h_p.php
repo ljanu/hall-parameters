@@ -51,7 +51,9 @@ return [
         "max_purlin_size"         => "max vzdálenost vaznic",
         "max_side_rails_size"     => "max vzdálenost vazniček",
 
-        //metadata
+        //specification
+        "new_specification"            => "nová specifikace",
+        "edit_specification"           => "upravit specifikaci",
         "form_metadata"                => "form metadata",
         "specification"                => 'specifikace',
         "name_object"                  => "název objektu",

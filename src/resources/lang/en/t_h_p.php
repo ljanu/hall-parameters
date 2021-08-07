@@ -4,16 +4,16 @@ return [
     "routes" => array(
 
         //hall-parameters
-        "h_p_index" => "h-p-en.index",
-        "h_p_show"  => "h-p-en.show",
+        "h_p_index"            => "h-p-en.index",
+        "h_p_show"             => "h-p-en.show",
 
         //construction
-        "construction_create" => "construction.create",
-        "construction_edit"   => "construction.edit",
+        "construction_create"  => "construction.create",
+        "construction_edit"    => "construction.edit",
 
         //specification
         "specification_create" => "specification.create",
-        "specification_edit" => "specification.edit",
+        "specification_edit"   => "specification.edit",
 
     ),
     "text"   => array(
@@ -51,7 +51,9 @@ return [
         "max_purlin_size"              => "max purlin distance dimension",
         "max_side_rails_size"          => "max dimension of the side rail distance",
 
-        //metadata
+        //specification
+        "new_specification"            => "new specification",
+        "edit_specification"           => "edit specification",
         "form_metadata"                => "form metadata",
         "specification"                => 'specification',
         "name_object"                  => "name object",
