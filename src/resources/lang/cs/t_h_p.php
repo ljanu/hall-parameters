@@ -7,8 +7,13 @@ return [
         "h_p_index" => "h-p-cs.index",
         "h_p_show"  => "h-p-cs.show",
 
+        // construction
         "construction_create" => "konstrukce.create",
         "construction_edit"   => "konstrukce.edit",
+
+        //specification
+        "specification_create" => "specifikace.create",
+        "specification_edit" => "specifikace.edit",
 
     ),
     "text"   => array(
@@ -46,8 +51,8 @@ return [
         "max_purlin_size"         => "max vzdálenost vaznic",
         "max_side_rails_size"     => "max vzdálenost vazniček",
 
-        //specification
-        "form_metadata"                => "form specification",
+        //metadata
+        "form_metadata"                => "form metadata",
         "specification"                => 'specifikace',
         "name_object"                  => "název objektu",
         "roof_load"                    => "zatížení střechy",
