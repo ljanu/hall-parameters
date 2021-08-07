@@ -2,7 +2,7 @@
 
 use Tudy\HallParameters\Http\Controllers\HallParametersController;
 use Tudy\HallParameters\Http\Controllers\Specification\ConstructionController;
-use Tudy\HallParameters\Http\Controllers\Specification\MetadataController;
+use Tudy\HallParameters\Http\Controllers\Specification\SpecificationController;
 
 Route::middleware('web')->group(function () {
 
@@ -20,14 +20,14 @@ Route::middleware('web')->group(function () {
                 'update'  => 'construction.update',
             ]);
 
-        //metadata
-        Route::resource('metadata', MetadataController::class)
+        //specification
+        Route::resource('specification', SpecificationController::class)
             ->except('index', "show", 'destroy')
             ->names([
-                'create'  => 'metadata.create',
-                'store'   => 'metadata.store',
-                'edit'    => 'metadata.edit',
-                'update'  => 'metadata.update',
+                'create'  => 'specification.create',
+                'store'   => 'specification.store',
+                'edit'    => 'specification.edit',
+                'update'  => 'specification.update',
             ]);
 
         //main
@@ -45,13 +45,6 @@ Route::middleware('web')->group(function () {
 
     Route::prefix('hala-parametry')->group(function () {
 
-        //main
-        Route::get('/', [HallParametersController::class, 'index'])
-            ->name('h-p-cs.index');
-
-        Route::get('/{hall_id}', [HallParametersController::class, 'show'])
-            ->name('h-p-cs.show');
-
         //construction
         Route::resource('konstrukce', ConstructionController::class)
             ->except('index', "show", 'store',"update", 'destroy')
@@ -60,7 +53,22 @@ Route::middleware('web')->group(function () {
                 'edit'    => 'konstrukce.edit',
             ]);
 
-        //metadata not lang cs use metadata lang en
+        //specification
+        Route::resource('specifikace', SpecificationController::class)
+            ->except('index', "show", 'destroy')
+            ->names([
+                'create'  => 'specifikace.create',
+                'store'   => 'specifikace.store',
+                'edit'    => 'specifikace.edit',
+                'update'  => 'specifikace.update',
+            ]);
+
+        //main
+        Route::get('/', [HallParametersController::class, 'index'])
+            ->name('h-p-cs.index');
+
+        Route::get('/{hall_id}', [HallParametersController::class, 'show'])
+            ->name('h-p-cs.show');
 
     });
 

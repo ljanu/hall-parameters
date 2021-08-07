@@ -46,8 +46,8 @@ return [
         "max_purlin_size"              => "max purlin distance dimension",
         "max_side_rails_size"          => "max dimension of the side rail distance",
 
-        //metadata
-        "form_metadata"                => "form metadata",
+        //specification
+        "form_metadata"                => "form specification",
         "specification"                => 'specification',
         "name_object"                  => "name object",
         "roof_load"                    => "roof load",

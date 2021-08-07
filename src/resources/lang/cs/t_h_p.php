@@ -46,8 +46,8 @@ return [
         "max_purlin_size"         => "max vzdálenost vaznic",
         "max_side_rails_size"     => "max vzdálenost vazniček",
 
-        //metadata
-        "form_metadata"                => "form metadata",
+        //specification
+        "form_metadata"                => "form specification",
         "specification"                => 'specifikace',
         "name_object"                  => "název objektu",
         "roof_load"                    => "zatížení střechy",

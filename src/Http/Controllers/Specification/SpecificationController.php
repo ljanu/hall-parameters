@@ -9,13 +9,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
-class  MetadataController extends Controller
+class  SpecificationController extends Controller
 {
 
 
     public function create() :View
     {
-        return view('hall-parameters::metadata.create');
+        return view('hall-parameters::specification.create');
     }
 
 
@@ -33,7 +33,7 @@ class  MetadataController extends Controller
 
     public function edit($id)
     {
-       return view('hall-parameters::metadata.edit')
+       return view('hall-parameters::specification.edit')
            ->with("id", $id);
     }
 

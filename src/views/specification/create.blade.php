@@ -7,7 +7,7 @@
         <div class = "text-center" >{{trans("t_h_p.text.new")}}</div>
 
 
-        {{-- form metadata --}}
+        {{-- form specification --}}
         <x-hall-parameters::form.metadata method="post" />
 
 

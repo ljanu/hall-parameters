@@ -1,4 +1,4 @@
-{{-- component html form metadata --}}
+{{-- component html form specification --}}
 @props([
     'method' => $method
 ])
@@ -12,7 +12,7 @@
 
         {{-- form --}}
         <form
-                action = "{{route('metadata.store')}}"
+                action = "{{route('specification.store')}}"
                 id = "form-metadata"
                 method = "post" >
             @csrf

@@ -16,10 +16,10 @@
                 </a>
             </li>
             <li>
-                <a href = "{{route("metadata.create")}}" > new Metadata</a >
+                <a href = "{{route("specification.create")}}" > new Metadata</a >
             </li>
             <li>
-                <a href = "{{route("metadata.edit", '1')}}" > edit Metadata</a >
+                <a href = "{{route("specification.edit", '1')}}" > edit Metadata</a >
             </li>
         </ul>
 
