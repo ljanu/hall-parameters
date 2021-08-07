@@ -10,7 +10,7 @@ class ConstructionRoutesTest extends TestCase
 
     //methods get ---------------------------------------------------------
 
-    public function test_route_get_metadata_create_cs()
+    public function test_route_get_construction_create_cs()
     {
         $response = $this->get('/hala-parametry/konstrukce/vytvorit');
         $response ->assertViewIs('hall-parameters::form.construction.create');
