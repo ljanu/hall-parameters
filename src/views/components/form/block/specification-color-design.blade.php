@@ -4,7 +4,7 @@
 
 <fieldset class = "m-base" >
 
-    <div class = "m-title" >{{trans("t_h_p.text.basic_color_design")}}</div >
+    <legend class = "m-title" >{{trans("t_h_p.text.basic_color_design")}}</legend >
 
     {{-- wrap colors --}}
     <div class = "grid grid-cols-2 self-center" >

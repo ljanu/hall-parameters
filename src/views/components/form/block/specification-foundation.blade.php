@@ -2,7 +2,7 @@
 
 <fieldset class="m-base" >
 
-    <div class = "m-title" >{{trans("t_h_p.text.foundation_build")}}</div >
+    <legend class = "m-title" >{{trans("t_h_p.text.foundation_build")}}</legend >
 
     <div class = "m-base grid grid-cols-2 self-center" >
         {{-- height floor --}}
