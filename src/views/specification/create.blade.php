@@ -8,7 +8,8 @@
 
 
         {{-- form specification --}}
-        <x-hall-parameters::form.metadata method="post" />
+        <x-hall-parameters::form.specification method="post"/>
+
 
 
     </x-slot >
