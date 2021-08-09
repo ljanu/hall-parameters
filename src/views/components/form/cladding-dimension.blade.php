@@ -48,6 +48,12 @@
             @csrf
             @method($method)
 
+            {{-- roof --}}
+            <x-hall-parameters::form.block.cladding-dimension-roof />
+
+            {{-- yellow wall --}}
+            <x-hall-parameters::form.block.cladding-dimension-wall colorWall="yellow"/>
+
 
 
 
