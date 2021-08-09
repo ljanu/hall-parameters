@@ -86,10 +86,6 @@
             </div>
 
 
-
-
-
-
             {{-- button --}}
             <button
                     class = "my-10"
