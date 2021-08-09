@@ -1,6 +1,7 @@
 <?php
 
 use Tudy\HallParameters\Http\Controllers\HallParametersController;
+use Tudy\HallParameters\Http\Controllers\Specification\CladdingDimensionController;
 use Tudy\HallParameters\Http\Controllers\Specification\ConstructionController;
 use Tudy\HallParameters\Http\Controllers\Specification\SpecificationController;
 
@@ -31,7 +32,7 @@ Route::middleware('web')->group(function () {
             ]);
 
         //cladding dimension
-        Route::resource('cladding-dimension', SpecificationController::class)
+        Route::resource('cladding-dimension', CladdingDimensionController::class)
             ->except('index', "show", 'destroy')
             ->names([
                 'create' => 'cladding-dimension.create',
@@ -74,7 +75,7 @@ Route::middleware('web')->group(function () {
             ]);
 
         //cladding dimension
-        Route::resource('rozmery-oplasteni', SpecificationController::class)
+        Route::resource('rozmery-oplasteni', CladdingDimensionController::class)
             ->except('index', "show", 'destroy')
             ->names([
                 'create' => 'rozmery-oplasteni.create',

@@ -21,6 +21,12 @@
             <li>
                 <a href = "{{route(trans("t_h_p.routes.specification_edit"), '1')}}" >{{trans("t_h_p.text.edit_specification")}}</a >
             </li>
+            <li>
+                <a href = "{{route('cladding-dimension.create')}}" >new Cladding Dimension</a >
+            </li>
+            <li>
+                <a href = "{{route('cladding-dimension.edit', '1')}}" >edit Cladding Dimension</a >
+            </li>
         </ul>
 
 
