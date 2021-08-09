@@ -13,7 +13,7 @@
         {{-- img  gable--}}
             <img
                     src = "{{asset("images/hall-parameters/3d-$roofType.svg")}}"
-                    alt = "3D object roof gable" >
+                    alt = "3D object roof" >
 
     </div >
 
