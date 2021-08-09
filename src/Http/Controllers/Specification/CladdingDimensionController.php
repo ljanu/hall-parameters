@@ -6,14 +6,15 @@ namespace Tudy\HallParameters\Http\Controllers\Specification;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class  CladdingDimensionController extends Controller
 {
 
 
-    public function create()
+    public function create(): View
     {
-        return 'create form';
+        return view('hall-parameters::cladding-dimension.create');
     }
 
 
@@ -29,9 +30,10 @@ class  CladdingDimensionController extends Controller
 
 
 
-    public function edit($id)
+    public function edit($id): View
     {
-        return 'edit form';
+        return view('hall-parameters::cladding-dimension.edit')
+            ->with('id', $id);
     }
 
 

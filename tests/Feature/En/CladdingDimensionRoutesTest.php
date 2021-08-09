@@ -14,8 +14,7 @@ class CladdingDimensionRoutesTest extends TestCase
     {
         // $this->withoutExceptionHandling();
         $response = $this->get('/hall-parameters/cladding-dimension/create');
-//        $response ->assertViewIs('hall-parameters::cladding-dimension
-//.create');
+        $response ->assertViewIs('hall-parameters::cladding-dimension.create');
         $response->assertStatus(200);
     }
 
@@ -26,7 +25,7 @@ class CladdingDimensionRoutesTest extends TestCase
     public function test_route_get_cladding_dimension_edit_en()
     {
         $response = $this->get('/hall-parameters/cladding-dimension/1/edit');
-//        $response->assertViewIs('hall-parameters::cladding-dimension.edit');
+        $response->assertViewIs('hall-parameters::cladding-dimension.edit');
         $response->assertStatus(200);
     }
 

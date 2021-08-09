@@ -13,7 +13,7 @@ class CladdingDimensionRoutesTest extends TestCase
     public function test_route_get_cladding_dimension_create_cs()
     {
         $response = $this->get('/hala-parametry/rozmery-oplasteni/vytvorit');
-//        $response ->assertViewIs('hall-parameters::construction.create');
+        $response->assertViewIs('hall-parameters::cladding-dimension.create');
         $response->assertStatus(200);
     }
 
@@ -24,7 +24,7 @@ class CladdingDimensionRoutesTest extends TestCase
     public function test_route_get_cladding_dimension_edit_cs()
     {
         $response = $this->get('/hala-parametry/rozmery-oplasteni/1/upravit');
-//        $response->assertViewIs('hall-parameters::construction.edit');
+        $response->assertViewIs('hall-parameters::cladding-dimension.edit');
         $response->assertStatus(200);
     }
 
