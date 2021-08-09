@@ -24,10 +24,20 @@ Route::middleware('web')->group(function () {
         Route::resource('specification', SpecificationController::class)
             ->except('index', "show", 'destroy')
             ->names([
-                'create'  => 'specification.create',
-                'store'   => 'specification.store',
-                'edit'    => 'specification.edit',
-                'update'  => 'specification.update',
+                'store'  => 'specification.store',
+                'create' => 'specification.create',
+                'edit'   => 'specification.edit',
+                'update' => 'specification.update',
+            ]);
+
+        //cladding dimension
+        Route::resource('cladding-dimension', SpecificationController::class)
+            ->except('index', "show", 'destroy')
+            ->names([
+                'create' => 'cladding-dimension.create',
+                'store'  => 'cladding-dimension.store',
+                'edit'   => 'cladding-dimension.edit',
+                'update' => 'cladding-dimension.update',
             ]);
 
         //main
@@ -57,10 +67,20 @@ Route::middleware('web')->group(function () {
         Route::resource('specifikace', SpecificationController::class)
             ->except('index', "show", 'destroy')
             ->names([
-                'create'  => 'specifikace.create',
-                'store'   => 'specifikace.store',
-                'edit'    => 'specifikace.edit',
-                'update'  => 'specifikace.update',
+                'create' => 'specifikace.create',
+                'store'  => 'specifikace.store',
+                'edit'   => 'specifikace.edit',
+                'update' => 'specifikace.update',
+            ]);
+
+        //cladding dimension
+        Route::resource('rozmery-oplasteni', SpecificationController::class)
+            ->except('index', "show", 'destroy')
+            ->names([
+                'create' => 'rozmery-oplasteni.create',
+                'store'  => 'rozmery-oplasteni.store',
+                'edit'   => 'rozmery-oplasteni.edit',
+                'update' => 'rozmery-oplasteni.update',
             ]);
 
         //main
