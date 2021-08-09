@@ -1,7 +1,16 @@
 {{-- componet cladding dimension roof --}}
+@props([
+    "roofType"
+])
 
 <fieldset class="flex flex-col md:flex-row" >
     <legend class = "m-title" >Střecha</legend >
+
+    <img
+            src = "{{asset("images/hall-parameters/$roofType-roof.svg")}}"
+            alt = "gable roof"
+            width="75"
+    >
 
     {{-- width --}}
     <div>

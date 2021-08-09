@@ -3,19 +3,31 @@
     "colorWall",
     "roofType",
 ])
-
-<fieldset class="flex flex-col md:flex-row" >
-    <legend class = "m-title" >{{$colorWall}} stěna</legend >
+<fieldset class = "flex flex-col md:flex-row pt-2" >
+    <legend class = "m-title flex flex-row" > {{$colorWall}} stěna</legend >
 
     {{-- img --}}
-    <img
-            src = "{{asset("images/hall-parameters/$colorWall-$roofType.svg")}}"
-            alt = "yellow gable"
-            width="70"
-    >
-    
+    @if ($colorWall == 'yellow' || $colorWall =='green')
+
+        <img
+                src = "{{asset("images/hall-parameters/$colorWall-$roofType.svg")}}"
+                alt = "{{$colorWall}} gable"
+                width = "70"
+        >
+
+    @else
+
+        <img
+                src = "{{asset("images/hall-parameters/$colorWall-wall.svg")}}"
+                alt = "{{$colorWall}} wall"
+                width = "70"
+        >
+    @endif
+
+
     {{-- width --}}
-    <div>
+    <div >
+
         <label for = "{{$colorWall}}_width" >šířka</label >
         <input
                 class = "w-28"
@@ -23,12 +35,14 @@
                 id = "{{$colorWall}}_width"
                 name = "{{$colorWall}}_width"
                 value = ""
-                step="0.01"
+                step = "0.01"
                 min = "0" >
-    </div>
+
+    </div >
 
     {{-- length --}}
-    <div>
+    <div >
+
         <label for = "{{$colorWall}}length" >výška</label >
         <input
                 class = "w-28"
@@ -36,8 +50,9 @@
                 id = "{{$colorWall}}length"
                 name = "{{$colorWall}}length"
                 value = ""
-                step="0.01"
+                step = "0.01"
                 min = "0" >
-    </div>
+
+    </div >
 
 </fieldset >
