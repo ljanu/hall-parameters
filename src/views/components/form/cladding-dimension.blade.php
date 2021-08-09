@@ -7,7 +7,6 @@
 {{-- component wraper --}}
 <div class = "mt-5 md:mt-10 bg-gray-100 dark:bg-gray-800" >
 
-{{-- TODO změna obrázků podle typu střechy --}}
     {{-- img dimension--}}
     <div class = "flex flex-col items-center md:flex-row md:justify-center " >
 

@@ -14,7 +14,6 @@
                 <img
                         src = "{{asset('images/hall-parameters/gable-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.gable_roof")}}" >
-            </label >
 
             <input
                     type = "radio"
@@ -23,6 +22,8 @@
                     name = "roof_type"
                     value = "gable_roof"
                     checked = "checked" >
+
+            </label >
         </div >
 
         {{-- flat  roof left --}}
@@ -33,13 +34,15 @@
                 <img
                         src = "{{asset('images/hall-parameters/flat-left-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_left")}}" >
-            </label >
             <input
                     type = "radio"
                     id = "flat_roof_left"
                     class = "self-center"
                     name = "roof_type"
                     value = "flat_roof_left" >
+
+            </label >
+
         </div >
 
         {{-- flat roof right --}}
@@ -50,13 +53,15 @@
                 <img
                         src = "{{asset('images/hall-parameters/flat-right-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_right")}}" >
-            </label >
             <input
                     id = "flat_roof_right"
                     class = "self-center"
                     type = "radio"
                     name = "roof_type"
                     value = "flat_roof_right" >
+
+            </label >
+
         </div >
 
     </div >
