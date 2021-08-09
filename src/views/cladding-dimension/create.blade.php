@@ -8,8 +8,10 @@
 
 
         {{-- form construction --}}
+        <x-hall-parameters::form.cladding-dimension method="post" roof_type="gable"/>
 
-    </x-slot>
-</x-hall-parameters::welcome_hall_parameters>
+
+    </x-slot >
+</x-hall-parameters::welcome_hall_parameters >
 
 
