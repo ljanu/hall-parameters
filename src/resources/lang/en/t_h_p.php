@@ -4,20 +4,20 @@ return [
     "routes" => array(
 
         //hall-parameters
-        "h_p_index"            => "h-p-en.index",
-        "h_p_show"             => "h-p-en.show",
+        "h_p_index"                 => "h-p-en.index",
+        "h_p_show"                  => "h-p-en.show",
 
         //construction
-        "construction_create"  => "construction.create",
-        "construction_edit"    => "construction.edit",
+        "construction_create"       => "construction.create",
+        "construction_edit"         => "construction.edit",
 
         //specification
-        "specification_create" => "specification.create",
-        "specification_edit"   => "specification.edit",
+        "specification_create"      => "specification.create",
+        "specification_edit"        => "specification.edit",
 
         //cladding dimension
         "cladding_dimension_create" => "cladding-dimension.create",
-        "cladding_dimension_edit" => "cladding-dimension.edit"
+        "cladding_dimension_edit"   => "cladding-dimension.edit",
 
     ),
     "text"   => array(
@@ -32,6 +32,12 @@ return [
         "yes"                          => "yes",
         "no"                           => "no",
         "partly"                       => "partly",
+        "roof"                         => "roof",
+        "wall"                         => "wall",
+        "yellow"                       => "yellow",
+        "red"                          => "red",
+        "green"                        => "green",
+        "blue"                         => "blue",
 
         //project
         "project"                      => "project",
@@ -80,6 +86,6 @@ return [
         "fire_resistance_walls"        => "fire resistance walls",
 
         // cladding dimension
-        "cladding_dimension" => "cladding dimension"
+        "cladding_dimension"           => "cladding dimension",
     ),
 ];

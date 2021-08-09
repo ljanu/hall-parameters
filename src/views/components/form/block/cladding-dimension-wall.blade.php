@@ -4,14 +4,20 @@
     "roofType",
 ])
 <fieldset class = "flex flex-col md:flex-row pt-2" >
-    <legend class = "m-title flex flex-row" > {{$colorWall}} stěna</legend >
+    <legend class = "m-title flex flex-row" >
+        {{trans("t_h_p.text.$colorWall")}}
+        {{trans("t_h_p.text.wall")}}
+    </legend >
 
     {{-- img --}}
     @if ($colorWall == 'yellow' || $colorWall =='green')
 
         <img
                 src = "{{asset("images/hall-parameters/$colorWall-$roofType.svg")}}"
-                alt = "{{$colorWall}} gable"
+                alt = "
+                    {{trans("t_h_p.text.$colorWall")}}
+                    {{trans("t_h_p.text.wall")}}
+                "
                 width = "70"
         >
 
@@ -28,7 +34,7 @@
     {{-- width --}}
     <div >
 
-        <label for = "{{$colorWall}}_width" >šířka</label >
+        <label for = "{{$colorWall}}_width" >{{trans("t_h_p.text.width")}}</label >
         <input
                 class = "w-28"
                 type = "number"
@@ -43,7 +49,7 @@
     {{-- length --}}
     <div >
 
-        <label for = "{{$colorWall}}length" >výška</label >
+        <label for = "{{$colorWall}}length" >{{trans("t_h_p.text.height")}}</label >
         <input
                 class = "w-28"
                 type = "number"

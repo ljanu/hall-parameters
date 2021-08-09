@@ -2,7 +2,7 @@
     <x-slot name="content">
 
         {{-- head --}}
-        <h1>Cladding Dimension</h1>
+        <h1>{{trans("t_h_p.text.cladding_dimension")}}</h1>
 
         <div class="text-center">{{trans("t_h_p.text.new")}}</div>
 
