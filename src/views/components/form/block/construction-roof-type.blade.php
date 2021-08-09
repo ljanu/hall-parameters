@@ -31,7 +31,7 @@
                     for = "flat_roof_left"
                     class = "text-right self-center" >
                 <img
-                        src = "{{asset('images/hall-parameters/flat-roof-left.svg')}}"
+                        src = "{{asset('images/hall-parameters/flat-left-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_left")}}" >
             </label >
             <input
@@ -48,7 +48,7 @@
                     for = "flat_roof_right"
                     class = "text-right self-center" >
                 <img
-                        src = "{{asset('images/hall-parameters/flat-roof-right.svg')}}"
+                        src = "{{asset('images/hall-parameters/flat-right-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_right")}}" >
             </label >
             <input
