@@ -49,10 +49,43 @@
             @method($method)
 
             {{-- roof --}}
-            <x-hall-parameters::form.block.cladding-dimension-roof />
+            <x-hall-parameters::form.block.cladding-dimension-roof
+                    :roofType="$roofType"
+            />
 
             {{-- yellow wall --}}
-            <x-hall-parameters::form.block.cladding-dimension-wall colorWall="yellow"/>
+            <div class="border-t border-gray-500">
+                <x-hall-parameters::form.block.cladding-dimension-wall
+                        colorWall="yellow"
+                        :roofType="$roofType"
+                />
+            </div>
+
+            {{-- red wall --}}
+            <div class="border-t border-gray-500">
+                <x-hall-parameters::form.block.cladding-dimension-wall
+                        colorWall="red"
+                        :roofType="$roofType"
+                />
+            </div>
+
+            {{-- green wall --}}
+            <div class="border-t border-gray-500">
+                <x-hall-parameters::form.block.cladding-dimension-wall
+                        colorWall="green"
+                        :roofType="$roofType"
+                />
+            </div>
+
+            {{-- blue wall --}}
+            <div class="border-t border-gray-500">
+                <x-hall-parameters::form.block.cladding-dimension-wall
+                        colorWall="blue"
+                        :roofType="$roofType"
+                />
+            </div>
+
+
 
 
 
