@@ -49,12 +49,12 @@
     {{-- length --}}
     <div >
 
-        <label for = "{{$colorWall}}length" >{{trans("t_h_p.text.height")}}</label >
+        <label for = "{{$colorWall}}_length" >{{trans("t_h_p.text.height")}}</label >
         <input
                 class = "w-28"
                 type = "number"
-                id = "{{$colorWall}}length"
-                name = "{{$colorWall}}length"
+                id = "{{$colorWall}}_length"
+                name = "{{$colorWall}}_length"
                 value = ""
                 step = "0.01"
                 min = "0" >
