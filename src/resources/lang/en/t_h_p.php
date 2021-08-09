@@ -15,6 +15,10 @@ return [
         "specification_create" => "specification.create",
         "specification_edit"   => "specification.edit",
 
+        //cladding dimension
+        "cladding_dimension_create" => "cladding-dimension.create",
+        "cladding_dimension_edit" => "cladding-dimension.edit"
+
     ),
     "text"   => array(
 
@@ -75,5 +79,7 @@ return [
         "fire_resistance_roof"         => "fire resistance roof",
         "fire_resistance_walls"        => "fire resistance walls",
 
+        // cladding dimension
+        "cladding_dimension" => "cladding dimension"
     ),
 ];

@@ -15,6 +15,10 @@ return [
         "specification_create" => "specifikace.create",
         "specification_edit" => "specifikace.edit",
 
+        //cladding dimension
+        "cladding_dimension_create" => "rozmery-oplasteni.create",
+        "cladding_dimension_edit" => "rozmery-oplasteni.edit"
+
     ),
     "text"   => array(
 
@@ -74,5 +78,8 @@ return [
         "fire_resistance_construction" => "požární odolnost konstrukce",
         "fire_resistance_roof"         => "požární odolnost střechy",
         "fire_resistance_walls"        => "požární odolnost stěn",
+
+        // cladding dimension
+        "cladding_dimension" => "Rozměry opláštění"
     ),
 ];
