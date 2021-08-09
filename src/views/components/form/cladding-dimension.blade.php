@@ -42,7 +42,7 @@
 
         {{-- form --}}
         <form
-                action = "{{route('construction.store')}}"
+                action = "{{route('cladding-dimension.store')}}"
                 id = "form-construction"
                 method = "post" >
             @csrf

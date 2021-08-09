@@ -23,7 +23,7 @@ class  CladdingDimensionController extends Controller
 
     public function store(Request $request)
     {
-        //
+        return $request;
     }
 
 
@@ -42,7 +42,7 @@ class  CladdingDimensionController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        return $request;
     }
 
 

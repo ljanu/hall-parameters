@@ -7,10 +7,10 @@
         <div class="text-center">{{trans("t_h_p.text.edit")}}</div>
 
 
-        <p>Formulář úpravu rozměrů id: {{$id}} (test text)</p>
+        <p>Formulář úpravu cladding dimension id: {{$id}} (test text)</p>
 
         {{-- base form use --}}
-        <form action="{{route('construction.update', $id)}}" method="post">
+        <form action="{{route('cladding-dimension.update', $id)}}" method="post">
             @csrf
             @method('put')
 
