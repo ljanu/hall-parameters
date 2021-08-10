@@ -35,10 +35,18 @@
 
             {{-- yellow wall --}}
             <div class="border-t border-gray-500">
+
+                <x-hall-parameters::form.block.cladding-dimension-gable-wall
+                        colorWall="yellow"
+                        :roofType="$roofType"
+                />
+
                 <x-hall-parameters::form.block.cladding-dimension-wall
                         colorWall="yellow"
                         :roofType="$roofType"
                 />
+
+
             </div>
 
             {{-- red wall --}}
@@ -51,6 +59,12 @@
 
             {{-- green wall --}}
             <div class="border-t border-gray-500">
+
+                <x-hall-parameters::form.block.cladding-dimension-gable-wall
+                        colorWall="green"
+                        :roofType="$roofType"
+                />
+
                 <x-hall-parameters::form.block.cladding-dimension-wall
                         colorWall="green"
                         :roofType="$roofType"

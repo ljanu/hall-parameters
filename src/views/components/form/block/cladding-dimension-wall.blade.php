@@ -10,25 +10,11 @@
     </legend >
 
     {{-- img --}}
-    @if ($colorWall == 'yellow' || $colorWall =='green')
-
-        <img
-                src = "{{asset("images/hall-parameters/$colorWall-$roofType.svg")}}"
-                alt = "
-                    {{trans("t_h_p.text.$colorWall")}}
-                    {{trans("t_h_p.text.wall")}}
-                "
-                width = "70"
-        >
-
-    @else
-
         <img
                 src = "{{asset("images/hall-parameters/$colorWall-wall.svg")}}"
                 alt = "{{$colorWall}} wall"
                 width = "70"
         >
-    @endif
 
 
     {{-- width --}}
