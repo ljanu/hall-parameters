@@ -29,17 +29,17 @@
         {{-- flat  roof left --}}
         <div class = "mx-5" >
             <label
-                    for = "flat_roof_left"
+                    for = "flat_left_roof"
                     class = "text-right self-center" >
                 <img
                         src = "{{asset('images/hall-parameters/flat-left-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_left")}}" >
-            <input
-                    type = "radio"
-                    id = "flat_roof_left"
-                    class = "self-center"
-                    name = "roof_type"
-                    value = "flat_roof_left" >
+                <input
+                        type = "radio"
+                        id = "flat_left_roof"
+                        class = "self-center"
+                        name = "roof_type"
+                        value = "flat_left_roof" >
 
             </label >
 
@@ -48,17 +48,17 @@
         {{-- flat roof right --}}
         <div >
             <label
-                    for = "flat_roof_right"
+                    for = "flat_right_roof"
                     class = "text-right self-center" >
                 <img
                         src = "{{asset('images/hall-parameters/flat-right-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_right")}}" >
-            <input
-                    id = "flat_roof_right"
-                    class = "self-center"
-                    type = "radio"
-                    name = "roof_type"
-                    value = "flat_roof_right" >
+                <input
+                        id = "flat_right_roof"
+                        class = "self-center"
+                        type = "radio"
+                        name = "roof_type"
+                        value = "flat_right_roof" >
 
             </label >
 
