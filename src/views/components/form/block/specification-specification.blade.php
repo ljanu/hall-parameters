@@ -36,11 +36,11 @@
                 class = "w-56"
         >
             <option value = "1" >{{trans("t_h_p.text.load")}} 100 kg/m2</option >
-            <option value = "1" >{{trans("t_h_p.text.load")}} 200 kg/m2</option >
-            <option value = "1" >{{trans("t_h_p.text.load")}} 300 kg/m2</option >
-            <option value = "1" >{{trans("t_h_p.text.load")}} 400 kg/m2</option >
-            <option value = "1" >{{trans("t_h_p.text.load")}} 500 kg/m2</option >
-            <option value = "1" >{{trans("t_h_p.text.load")}} 600 kg/m2</option >
+            <option value = "2" >{{trans("t_h_p.text.load")}} 200 kg/m2</option >
+            <option value = "3" >{{trans("t_h_p.text.load")}} 300 kg/m2</option >
+            <option value = "4" >{{trans("t_h_p.text.load")}} 400 kg/m2</option >
+            <option value = "5" >{{trans("t_h_p.text.load")}} 500 kg/m2</option >
+            <option value = "6" >{{trans("t_h_p.text.load")}} 600 kg/m2</option >
         </select >
 
 
@@ -54,9 +54,9 @@
                 id = "insulated"
                 class = "w-56"
         >
-            <option value = "1" >{{trans("t_h_p.text.yes")}}</option >
-            <option value = "1" >{{trans("t_h_p.text.no")}}</option >
-            <option value = "1" >{{trans("t_h_p.text.partly")}}</option >
+            <option value = "yes" >{{trans("t_h_p.text.yes")}}</option >
+            <option value = "no" >{{trans("t_h_p.text.no")}}</option >
+            <option value = "partly" >{{trans("t_h_p.text.partly")}}</option >
         </select >
 
     </div >
