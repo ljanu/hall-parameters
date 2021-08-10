@@ -15,4 +15,5 @@
     <path d="M130.622 5v50l93.301 25V40z" fill="#10b981" stroke="#000"/>
     <path d="M102.631 72.5L223.923 40v40l-121.292 32.5z" fill="#3b82f6" stroke="#000"/>
     <path d="M9.33 37.5l93.301 35v40l-93.3-25z" fill="#fbbf24" stroke="#000"/>
+    <path d="M9.33 47.5l93.301 25M130.622 15l93.301 25" fill="none" stroke="#000"/>
 </svg>
