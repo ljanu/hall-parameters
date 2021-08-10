@@ -8,11 +8,11 @@
 
 <fieldset class="flex flex-row justify-between" >
 
-    <legend class="m-title" >štítová stěna</legend >
+    <legend class="m-title" >{{trans("t_h_p.text.gable_wall")}}</legend >
 
     <img
             src = " {{asset("images/hall-parameters/$colorWall-$roofType.svg")}}"
-            alt = "{{trans($colorWall)}} gable" >
+            alt = "{{trans($colorWall)}} {{trans("t_h_p.text.gable_wall")}}" >
 
     <label class="self-center" for = "{{$colorWall}}_gable_wall" >ano</label >
 

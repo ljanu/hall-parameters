@@ -87,5 +87,6 @@ return [
 
         // cladding dimension
         "cladding_dimension"           => "Rozměry opláštění",
+        "gable_wall"                   => "štítová stěna",
     ),
 ];

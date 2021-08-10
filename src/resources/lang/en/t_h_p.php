@@ -87,5 +87,6 @@ return [
 
         // cladding dimension
         "cladding_dimension"           => "cladding dimension",
+        "gable_wall"                   => "gable wall",
     ),
 ];
