@@ -14,7 +14,7 @@
             src = " {{asset("images/hall-parameters/$colorWall-$roofType.svg")}}"
             alt = "{{trans($colorWall)}} {{trans("t_h_p.text.gable_wall")}}" >
 
-    <label class="self-center" for = "{{$colorWall}}_gable_wall" >ano</label >
+    <label class="self-center" for = "{{$colorWall}}_gable_wall" >{{trans("t_h_p.text.yes")}}</label >
 
     <input checked
            type = "radio"
@@ -24,7 +24,7 @@
            class="self-center"
     >
 
-    <label class="self-center" for = "{{$colorWall}}_{{$roofType}}_wall" >ne</label >
+    <label class="self-center" for = "{{$colorWall}}_{{$roofType}}_wall" >{{trans("t_h_p.text.no")}}</label >
 
     <input
             type = "radio"
