@@ -29,7 +29,7 @@
             @method($method)
 
             {{-- roof --}}
-                <div class="mt-5 pl-5 border-l-4 border-t-4 border-gray-500">
+                <div class="mt-5 pl-5 border-l-4 border-t-4 border-blue-500">
                     <x-hall-parameters::form.block.cladding-dimension-roof
                             :roofType="$roofType" />
                 </div>
