@@ -14,7 +14,8 @@ class  CladdingDimensionController extends Controller
 
     public function create(): View
     {
-        return view('hall-parameters::cladding-dimension.create');
+        return view('hall-parameters::cladding-dimension.create')
+            ->with("roofType", "gable");
     }
 
 

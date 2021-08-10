@@ -18,7 +18,7 @@
     </div >
 
     {{-- form content wraper --}}
-    <div class = "py-5 flex justify-center text-center " >
+    <div class = "py-5 flex justify-center text-center" >
 
         {{-- form --}}
         <form
@@ -29,12 +29,14 @@
             @method($method)
 
             {{-- roof --}}
-            <x-hall-parameters::form.block.cladding-dimension-roof
-                    :roofType="$roofType"
-            />
+                <div class="mt-5 pl-5 border-l-4 border-t-4 border-gray-500">
+                    <x-hall-parameters::form.block.cladding-dimension-roof
+                            :roofType="$roofType" />
+                </div>
+
 
             {{-- yellow wall --}}
-            <div class="border-t border-gray-500">
+            <div class="mt-5 pl-5 border-l-4 border-t-4  border-yellow-400">
 
                 <x-hall-parameters::form.block.cladding-dimension-gable-wall
                         colorWall="yellow"
@@ -50,7 +52,7 @@
             </div>
 
             {{-- red wall --}}
-            <div class="border-t border-gray-500">
+            <div class="mt-5 pl-5 border-l-4 border-t-4  border-red-500">
                 <x-hall-parameters::form.block.cladding-dimension-wall
                         colorWall="red"
                         :roofType="$roofType"
@@ -58,7 +60,7 @@
             </div>
 
             {{-- green wall --}}
-            <div class="border-t border-gray-500">
+            <div class="mt-5 pl-5 border-l-4 border-t-4  border-green-500">
 
                 <x-hall-parameters::form.block.cladding-dimension-gable-wall
                         colorWall="green"
@@ -72,7 +74,7 @@
             </div>
 
             {{-- blue wall --}}
-            <div class="border-t border-gray-500">
+            <div class="mt-5 pl-5 border-l-4 border-t-4  border-blue-500">
                 <x-hall-parameters::form.block.cladding-dimension-wall
                         colorWall="blue"
                         :roofType="$roofType"

@@ -7,8 +7,8 @@
         <div class="text-center">{{trans("t_h_p.text.new")}}</div>
 
 
-        {{-- form construction --}}
-        <x-hall-parameters::form.cladding-dimension method="post" roofType="gable"/>
+        {{-- form cladding dimension --}}
+        <x-hall-parameters::form.cladding-dimension method="post" :roofType="$roofType"/>
 
 
     </x-slot >
