@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="120">
+    <path d="M9.33 87.5l93.301 25" fill="none" stroke="#000" stroke-width="1.111"/>
+    <path d="M9.33 87.5v-40M102.631 112.5v-40M102.631 112.5L223.923 80M102.631 72.5L223.923 40M223.923 80V40M102.631 72.5L55.981 45M9.33 87.5L130.622 55"
+          fill="none" stroke="#000"/>
+    <path d="M223.923 80l-93.301-25" fill="none" stroke="#000" stroke-width="1.111"/>
+    <path d="M9.33 47.5L55.98 45M55.98 45l121.292-32.5" fill="none" stroke="#000"/>
+    <path d="M130.622 15v40" fill="none" stroke="#000" stroke-width="1.069"/>
+    <path d="M9.33 47.5c2.227 0 2.227 0 0 0M9.33 47.5L130.622 15" fill="none" stroke="#000"/>
+    <path d="M9.33 47.5L130.622 15v40L9.33 87.5z" fill="none" stroke="#6b7280"/>
+    <path d="M130.622 15l46.65-2.5" fill="none" stroke="#000"/>
+    <path d="M130.622 55l93.301 25V40l-46.65-27.5-46.651 2.5z" fill="#10b981" stroke="#6b7280"/>
+    <path d="M223.923 40l-46.65-27.5M9.33 87.5v-40L55.98 45l46.651 27.5v40zM102.631 72.5L223.923 40v40l-121.292 32.5zM55.98 45l121.292-32.5M9.33 47.5l93.301 25M130.622 15l93.301 25"
+          fill="none" stroke="#6b7280"/>
+</svg>

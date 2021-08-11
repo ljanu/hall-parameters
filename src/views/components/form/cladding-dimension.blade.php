@@ -8,14 +8,14 @@
 <div class = "mt-5 md:mt-10 bg-gray-100 dark:bg-gray-800" >
 
     {{-- img dimension--}}
-{{--    <div class = "flex flex-col items-center md:flex-row md:justify-center " >--}}
+    <div class = "flex flex-col items-center md:flex-row md:justify-center " >
 
-{{--        --}}{{-- img  gable--}}
-{{--            <img--}}
-{{--                    src = "{{asset("images/hall-parameters/3d-$roofType.svg")}}"--}}
-{{--                    alt = "3D object roof" >--}}
+            <img
+                    src = "{{asset("images/hall-parameters/3d-$roofType.svg")}}"
+                    alt = "3D object roof"
+            >
 
-{{--    </div >--}}
+    </div >
 
     {{-- form content wraper --}}
     <div class = "py-5 flex justify-center text-center" >
@@ -39,7 +39,10 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-yellow-400">
 
                {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img :roofType="$roofType"/>
+                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                        colorWall="yellow"
+                        :roofType="$roofType"
+                />
 
 
                 {{-- gable --}}
@@ -61,8 +64,11 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-red-500">
 
                 {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img :roofType="$roofType"/>
-                
+                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                        colorWall="red"
+                        :roofType="$roofType"
+                />
+
                 {{-- wall --}}
                 <x-hall-parameters::form.block.cladding-dimension-wall
                         colorWall="red"
@@ -74,8 +80,10 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-green-500">
 
                 {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img :roofType="$roofType"/>
-                
+                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                        colorWall="green"
+                        :roofType="$roofType"/>
+
                 {{-- gable --}}
                 <x-hall-parameters::form.block.cladding-dimension-gable-wall
                         colorWall="green"
@@ -93,8 +101,11 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-blue-500">
 
                 {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img :roofType="$roofType"/>
-                
+                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                        colorWall="blue"
+                        :roofType="$roofType"
+                />
+
                 {{-- wall --}}
                 <x-hall-parameters::form.block.cladding-dimension-wall
                         colorWall="blue"
