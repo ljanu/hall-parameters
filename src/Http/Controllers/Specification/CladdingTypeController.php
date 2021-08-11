@@ -6,14 +6,15 @@ namespace Tudy\HallParameters\Http\Controllers\Specification;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class  CladdingTypeController extends Controller
 {
 
 
-    public function create()
+    public function create() :View
     {
-        return "funguje create";
+        return view('hall-parameters::cladding-type.create');
     }
 
 
@@ -29,9 +30,10 @@ class  CladdingTypeController extends Controller
 
 
 
-    public function edit($id)
+    public function edit($id) : View
     {
-        return "funguje edit id. $id";
+        return view('hall-parameters::cladding-type.edit')
+            ->with('id', $id);
     }
 
 
