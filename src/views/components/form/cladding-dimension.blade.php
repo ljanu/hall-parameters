@@ -30,7 +30,7 @@
 
             {{-- roof --}}
                 <div class="mt-5 pl-5 border-l-4 border-t-4 border-blue-500">
-                    <x-hall-parameters::form.block.cladding-dimension-roof
+                    <x-hall-parameters::form.block.cladding-dimension.roof
                             :roofType="$roofType" />
                 </div>
 
@@ -39,20 +39,20 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-yellow-400">
 
                {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                <x-hall-parameters::form.block.cladding-dimension.3d-img
                         colorWall="yellow"
                         :roofType="$roofType"
                 />
 
 
                 {{-- gable --}}
-                <x-hall-parameters::form.block.cladding-dimension-gable-wall
+                <x-hall-parameters::form.block.cladding-dimension.gable-wall
                         colorWall="yellow"
                         :roofType="$roofType"
                 />
 
                 {{-- wall --}}
-                <x-hall-parameters::form.block.cladding-dimension-wall
+                <x-hall-parameters::form.block.cladding-dimension.wall
                         colorWall="yellow"
                         :roofType="$roofType"
                 />
@@ -64,13 +64,13 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-red-500">
 
                 {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                <x-hall-parameters::form.block.cladding-dimension.3d-img
                         colorWall="red"
                         :roofType="$roofType"
                 />
 
                 {{-- wall --}}
-                <x-hall-parameters::form.block.cladding-dimension-wall
+                <x-hall-parameters::form.block.cladding-dimension.wall
                         colorWall="red"
                         :roofType="$roofType"
                 />
@@ -80,18 +80,18 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-green-500">
 
                 {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                <x-hall-parameters::form.block.cladding-dimension.3d-img
                         colorWall="green"
                         :roofType="$roofType"/>
 
                 {{-- gable --}}
-                <x-hall-parameters::form.block.cladding-dimension-gable-wall
+                <x-hall-parameters::form.block.cladding-dimension.gable-wall
                         colorWall="green"
                         :roofType="$roofType"
                 />
 
                 {{-- wall --}}
-                <x-hall-parameters::form.block.cladding-dimension-wall
+                <x-hall-parameters::form.block.cladding-dimension.wall
                         colorWall="green"
                         :roofType="$roofType"
                 />
@@ -101,13 +101,13 @@
             <div class="mt-5 pl-5 border-l-4 border-t-4  border-blue-500">
 
                 {{-- 3d img --}}
-                <x-hall-parameters::form.block.cladding-dimension-3d-img
+                <x-hall-parameters::form.block.cladding-dimension.3d-img
                         colorWall="blue"
                         :roofType="$roofType"
                 />
 
                 {{-- wall --}}
-                <x-hall-parameters::form.block.cladding-dimension-wall
+                <x-hall-parameters::form.block.cladding-dimension.wall
                         colorWall="blue"
                         :roofType="$roofType"
                 />

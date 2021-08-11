@@ -38,15 +38,15 @@
 
 
             {{-- dimension --}}
-            <x-hall-parameters::form.block.construction-dimension />
+            <x-hall-parameters::form.block.construction.dimension />
 
 
             {{-- rooof type --}}
-            <x-hall-parameters::form.block.construction-roof-type />
+            <x-hall-parameters::form.block.construction.roof-type />
 
 
             {{-- limitations --}}
-            <x-hall-parameters::form.block.construction-limitations/>
+            <x-hall-parameters::form.block.construction.limitations/>
 
 
 

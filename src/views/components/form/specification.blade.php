@@ -20,25 +20,25 @@
 
 
 
-            {{-- specification -------------------------------------------------------------------------------------------}}
-            <x-hall-parameters::form.block.specification-specification />
+            {{-- specification --}}
+            <x-hall-parameters::form.block.specification.specification />
 
 
 
-            {{-- color design -----------------------------------------------------------------------------------------------}}
-            <x-hall-parameters::form.block.specification-color-design/>
+            {{-- color design --}}
+            <x-hall-parameters::form.block.specification.color-design/>
 
 
-            {{-- clading orinetation ------------------------------------------------------------------------------------------}}
-            <x-hall-parameters::form.block.specification-cladding-orientation/>
+            {{-- clading orinetation --}}
+            <x-hall-parameters::form.block.specification.cladding-orientation/>
 
 
             {{-- foundation --}}
-            <x-hall-parameters::form.block.specification-foundation/>
+            <x-hall-parameters::form.block.specification.foundation/>
 
 
             {{-- fire resistance --}}
-            <x-hall-parameters::form.block.specification-fire-resistance/>
+            <x-hall-parameters::form.block.specification.fire-resistance/>
 
 
 
