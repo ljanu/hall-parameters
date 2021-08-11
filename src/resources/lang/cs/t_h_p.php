@@ -19,6 +19,10 @@ return [
         "cladding_dimension_create" => "rozmery-oplasteni.create",
         "cladding_dimension_edit"   => "rozmery-oplasteni.edit",
 
+        //cladding type
+        "cladding_type_create" => "typ-oplasteni.create",
+        "cladding_type_edit"   => "typ-oplasteni.edit",
+
     ),
     "text"   => array(
 

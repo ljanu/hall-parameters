@@ -35,10 +35,10 @@
 
         <ul>
             <li>
-                <a href = "{{route("cladding-type.create")}}" > nový typ opláštění</a >
+                <a href = "{{route(trans("t_h_p.routes.cladding_type_create"))}}" > nový typ opláštění</a >
             </li>
             <li>
-                <a href = "{{route("cladding-type.edit", '1')}}" >úprava typu opláštění</a >
+                <a href = "{{route(trans("t_h_p.routes.cladding_type_edit"), '1')}}" >úprava typu opláštění</a >
             </li>
         </ul>
 

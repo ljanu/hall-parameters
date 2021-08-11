@@ -19,6 +19,10 @@ return [
         "cladding_dimension_create" => "cladding-dimension.create",
         "cladding_dimension_edit"   => "cladding-dimension.edit",
 
+        //cladding type
+        "cladding_type_create" => "cladding-type.create",
+        "cladding_type_edit"   => "cladding-type.edit",
+
     ),
     "text"   => array(
 
