@@ -2,6 +2,7 @@
 
 use Tudy\HallParameters\Http\Controllers\HallParametersController;
 use Tudy\HallParameters\Http\Controllers\Specification\CladdingDimensionController;
+use Tudy\HallParameters\Http\Controllers\Specification\CladdingTypeController;
 use Tudy\HallParameters\Http\Controllers\Specification\ConstructionController;
 use Tudy\HallParameters\Http\Controllers\Specification\SpecificationController;
 
@@ -39,6 +40,16 @@ Route::middleware('web')->group(function () {
                 'store'  => 'cladding-dimension.store',
                 'edit'   => 'cladding-dimension.edit',
                 'update' => 'cladding-dimension.update',
+            ]);
+
+        //cladding type
+        Route::resource('cladding-type', CladdingTypeController::class)
+            ->except('index', "show", 'destroy')
+            ->names([
+                'create' => 'cladding-type.create',
+                'store'  => 'cladding-type.store',
+                'edit'   => 'cladding-type.edit',
+                'update' => 'cladding-type.update',
             ]);
 
         //main
@@ -82,6 +93,16 @@ Route::middleware('web')->group(function () {
                 'store'  => 'rozmery-oplasteni.store',
                 'edit'   => 'rozmery-oplasteni.edit',
                 'update' => 'rozmery-oplasteni.update',
+            ]);
+
+        //cladding type
+        Route::resource('typ-oplasteni', CladdingTypeController::class)
+            ->except('index', "show", 'destroy')
+            ->names([
+                'create' => 'typ-oplasteni.create',
+                'store'  => 'typ-oplasteni.store',
+                'edit'   => 'typ-oplasteni.edit',
+                'update' => 'typ-oplasteni.update',
             ]);
 
         //main
