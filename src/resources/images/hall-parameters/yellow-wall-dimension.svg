@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="50" viewBox="0 0 17.198 13.229">
+    <defs>
+        <marker id="b" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M4 0l2-2-7 2 7 2z" fill="#fbbf24" fill-rule="evenodd" stroke="#fbbf24" stroke-width=".4pt"/>
+        </marker>
+        <marker id="c" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M-4 0l-2 2 7-2-7-2z" fill="#fbbf24" fill-rule="evenodd" stroke="#fbbf24" stroke-width=".4pt"/>
+        </marker>
+        <marker id="a" refX="0" refY="0" orient="auto" overflow="visible">
+            <path d="M4 0l2-2-7 2 7 2z" fill="#fbbf24" fill-rule="evenodd" stroke="#fbbf24" stroke-width=".4pt"/>
+        </marker>
+    </defs>
+    <g stroke="#fbbf24">
+        <path d="M14.843 11.382H1.607v0" fill="#ef4444" stroke-width=".529" stroke-linecap="square"/>
+        <path d="M14.843 11.382V3.444M1.607 11.382V3.444" fill="#ef4444" stroke-width=".529" stroke-linecap="round"/>
+        <path d="M1.607 3.444v7.938M14.843 11.382V3.444" fill="#ef4444" stroke-width=".265"/>
+        <path d="M14.843 3.444H1.607v7.938h13.236z" fill="#fbbf24" stroke-width=".265"/>
+        <path d="M14.843 3.444H1.607v0" fill="#ef4444" stroke-width=".529" stroke-linecap="square"/>
+        <path d="M14.61 12.379H1.9v0" fill="#fbbf24" stroke-width=".259" stroke-linecap="square" marker-start="url(#a)"
+              marker-end="url(#a)"/>
+        <path d="M16.111 11.136V3.713" fill="#fbbf24" stroke-width=".256" marker-start="url(#b)" marker-end="url(#c)"/>
+    </g>
+</svg>

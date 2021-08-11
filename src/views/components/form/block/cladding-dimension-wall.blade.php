@@ -11,7 +11,7 @@
 
     {{-- img --}}
         <img
-                src = "{{asset("images/hall-parameters/$colorWall-wall.svg")}}"
+                src = "{{asset("images/hall-parameters/$colorWall-wall-dimension.svg")}}"
                 alt = "{{$colorWall}} wall"
                 width = "70"
         >
