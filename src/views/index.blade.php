@@ -42,6 +42,19 @@
             </li>
         </ul>
 
+        <ul>
+            <li>
+                <a href = "{{route(trans("t_h_p.routes.contact_create"))}}" >
+                    {{trans("t_h_p.text.new")}} {{trans("t_h_p.text.contact")}}
+                </a >
+            </li>
+            <li>
+                <a href = "{{route(trans("t_h_p.routes.contact_edit"), '1')}}" >
+                    {{trans("t_h_p.text.edit")}} {{trans("t_h_p.text.contact")}}
+                </a >
+            </li>
+        </ul>
+
 
         {{-- url main for testing --}}
         <p >seznam zadaných objektů</p >

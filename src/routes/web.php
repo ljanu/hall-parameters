@@ -4,6 +4,7 @@ use Tudy\HallParameters\Http\Controllers\HallParametersController;
 use Tudy\HallParameters\Http\Controllers\Specification\CladdingDimensionController;
 use Tudy\HallParameters\Http\Controllers\Specification\CladdingTypeController;
 use Tudy\HallParameters\Http\Controllers\Specification\ConstructionController;
+use Tudy\HallParameters\Http\Controllers\Specification\ContactController;
 use Tudy\HallParameters\Http\Controllers\Specification\SpecificationController;
 
 Route::middleware('web')->group(function () {
@@ -52,6 +53,16 @@ Route::middleware('web')->group(function () {
                 'update' => 'cladding-type.update',
             ]);
 
+        //contact
+        Route::resource('contact', ContactController::class)
+            ->except('index', "show", 'destroy')
+            ->names([
+                'create' => 'contact.create',
+                'store'  => 'contact.store',
+                'edit'   => 'contact.edit',
+                'update' => 'contact.update',
+            ]);
+
         //main
         Route::get('/', [HallParametersController::class, 'index'])
             ->name('h-p-en.index');
@@ -80,9 +91,7 @@ Route::middleware('web')->group(function () {
             ->except('index', "show", 'destroy')
             ->names([
                 'create' => 'specifikace.create',
-                'store'  => 'specifikace.store',
                 'edit'   => 'specifikace.edit',
-                'update' => 'specifikace.update',
             ]);
 
         //cladding dimension
@@ -90,9 +99,7 @@ Route::middleware('web')->group(function () {
             ->except('index', "show", 'destroy')
             ->names([
                 'create' => 'rozmery-oplasteni.create',
-                'store'  => 'rozmery-oplasteni.store',
                 'edit'   => 'rozmery-oplasteni.edit',
-                'update' => 'rozmery-oplasteni.update',
             ]);
 
         //cladding type
@@ -100,9 +107,15 @@ Route::middleware('web')->group(function () {
             ->except('index', "show", 'destroy')
             ->names([
                 'create' => 'typ-oplasteni.create',
-                'store'  => 'typ-oplasteni.store',
                 'edit'   => 'typ-oplasteni.edit',
-                'update' => 'typ-oplasteni.update',
+            ]);
+
+        //contact
+        Route::resource('kontakt', ContactController::class)
+            ->except('index', "show", 'destroy')
+            ->names([
+                'create' => 'kontakt.create',
+                'edit'   => 'kontakt.edit',
             ]);
 
         //main
