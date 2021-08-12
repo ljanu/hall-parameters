@@ -8,6 +8,8 @@
 
 
         {{-- form contact --}}
+        <x-hall-parameters::form.contact method="post"/>
+
 
     </x-slot>
 </x-hall-parameters::welcome_hall_parameters>

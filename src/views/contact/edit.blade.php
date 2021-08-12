@@ -10,7 +10,7 @@
         <p>Formulář úpravu kontaktu id: {{$id}} (test text</p>
 
         {{-- base form use --}}
-        <form action="{{route('construction.update', $id)}}" method="post">
+        <form action="{{route('contact.store', $id)}}" method="post">
             @csrf
             @method('put')
 
