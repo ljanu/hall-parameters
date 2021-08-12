@@ -20,8 +20,8 @@ return [
         "cladding_dimension_edit"   => "cladding-dimension.edit",
 
         //cladding type
-        "cladding_type_create" => "cladding-type.create",
-        "cladding_type_edit"   => "cladding-type.edit",
+        "cladding_type_create"      => "cladding-type.create",
+        "cladding_type_edit"        => "cladding-type.edit",
 
     ),
     "text"   => array(
@@ -79,6 +79,7 @@ return [
         "color_walls"                  => "color walls",
         "color_fill"                   => "color fill",
         "color_edges"                  => "color edges",
+        "general_type_cladding"        => "general type cladding",
         "color_construction"           => "color construction",
         "cladding_orientation"         => "cladding orientation",
         "foundation_build"             => "foundation of the build",
@@ -92,5 +93,8 @@ return [
         // cladding dimension
         "cladding_dimension"           => "cladding dimension",
         "gable_wall"                   => "gable wall",
+
+        // cladding type
+        "cladding_type"                => "cladding type",
     ),
 ];

@@ -7,7 +7,7 @@
 
     <legend class="m-title" >{{$roofOrWall}}</legend >
 
-    <label for = "type_{{$roofOrWall}}" > type</label >
+    <label for = "type_{{$roofOrWall}}" > cladding type</label >
     <select
             name = "type_{{$roofOrWall}}"
             id = "type_{{$roofOrWall}}" >
@@ -18,15 +18,15 @@
     </select >
 
 
-    <label for = "type_{{$roofOrWall}}" > thickness</label >
-    <select
-            name = "type_{{$roofOrWall}}"
-            id = "type_{{$roofOrWall}}" >
-        <option value = "1" >80</option >
-        <option value = "1" >100</option >
-        <option value = "2" >120</option >
-        <option value = "3" >140</option >
-    </select >
+{{--    <label for = "thickness_{{$roofOrWall}}" > thickness</label >--}}
+{{--    <select--}}
+{{--            name = "thickness_{{$roofOrWall}}"--}}
+{{--            id = "thickness_{{$roofOrWall}}" >--}}
+{{--        <option value = "80" >80</option >--}}
+{{--        <option value = "100" >100</option >--}}
+{{--        <option value = "200" >120</option >--}}
+{{--        <option value = "300" >140</option >--}}
+{{--    </select >--}}
 
 
 </fieldset >

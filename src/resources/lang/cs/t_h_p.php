@@ -20,8 +20,8 @@ return [
         "cladding_dimension_edit"   => "rozmery-oplasteni.edit",
 
         //cladding type
-        "cladding_type_create" => "typ-oplasteni.create",
-        "cladding_type_edit"   => "typ-oplasteni.edit",
+        "cladding_type_create"      => "typ-oplasteni.create",
+        "cladding_type_edit"        => "typ-oplasteni.edit",
 
     ),
     "text"   => array(
@@ -79,6 +79,7 @@ return [
         "color_walls"                  => "barva stěn",
         "color_fill"                   => "barva doplňků",
         "color_edges"                  => "barva lemování",
+        "general_type_cladding"        => "obecný typ opláštění",
         "color_construction"           => "barva konstrukce",
         "cladding_orientation"         => "orientace kladení pláště",
         "foundation_build"             => "založení objektu",
@@ -92,5 +93,8 @@ return [
         // cladding dimension
         "cladding_dimension"           => "Rozměry opláštění",
         "gable_wall"                   => "štítová stěna",
+
+        // cladding type
+        "cladding_type"                => "typ opláštění",
     ),
 ];
