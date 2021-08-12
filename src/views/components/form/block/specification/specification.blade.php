@@ -43,22 +43,6 @@
             <option value = "6" >{{trans("t_h_p.text.load")}} 600 kg/m2</option >
         </select >
 
-
-        {{-- insulates --}}
-        <label
-                for = "insulated"
-                class = "text-right self-center" >{{trans("t_h_p.text.insulated")}}
-        </label >
-        <select
-                name = "insulated"
-                id = "insulated"
-                class = "w-56"
-        >
-            <option value = "yes" >{{trans("t_h_p.text.yes")}}</option >
-            <option value = "no" >{{trans("t_h_p.text.no")}}</option >
-            <option value = "partly" >{{trans("t_h_p.text.partly")}}</option >
-        </select >
-
     </div >
 
 </fieldset >

@@ -23,23 +23,21 @@
             {{-- specification --}}
             <x-hall-parameters::form.block.specification.specification />
 
-
-
-            {{-- color design --}}
-            <x-hall-parameters::form.block.specification.color-design/>
-
+            {{-- general type of cladding  --}}
+            <x-hall-parameters::form.block.specification.general-type-cladding />
 
             {{-- clading orinetation --}}
-            <x-hall-parameters::form.block.specification.cladding-orientation/>
+            <x-hall-parameters::form.block.specification.cladding-orientation />
 
+            {{-- color design --}}
+            <x-hall-parameters::form.block.specification.color-design />
 
             {{-- foundation --}}
-            <x-hall-parameters::form.block.specification.foundation/>
+            <x-hall-parameters::form.block.specification.foundation />
 
 
             {{-- fire resistance --}}
-            <x-hall-parameters::form.block.specification.fire-resistance/>
-
+            <x-hall-parameters::form.block.specification.fire-resistance />
 
 
             {{-- button --}}
