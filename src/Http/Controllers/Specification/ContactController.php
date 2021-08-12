@@ -6,14 +6,15 @@ namespace Tudy\HallParameters\Http\Controllers\Specification;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class  ContactController extends Controller
 {
 
 
-    public function create()
+    public function create(): View
     {
-        return "create funguje";
+        return view('hall-parameters::contact.create');
     }
 
 
@@ -29,9 +30,10 @@ class  ContactController extends Controller
 
 
 
-    public function edit($id)
+    public function edit($id): View
     {
-        return "edit funguje id:  $id";
+        return view('hall-parameters::contact.edit')
+            ->with('id', $id);
     }
 
 
