@@ -23,6 +23,10 @@ return [
         "cladding_type_create"      => "cladding-type.create",
         "cladding_type_edit"        => "cladding-type.edit",
 
+        //contact
+        "contact_create"            => "contact.create",
+        "contact_edit"              => "contact.edit",
+
     ),
     "text"   => array(
 
@@ -42,6 +46,7 @@ return [
         "red"                          => "red",
         "green"                        => "green",
         "blue"                         => "blue",
+
 
         //project
         "project"                      => "project",
@@ -96,5 +101,22 @@ return [
 
         // cladding type
         "cladding_type"                => "cladding type",
+
+        //contact
+        "contact"                      => "contact",
+        "address"                      => "address",
+        "company"                      => "company",
+        "first_name"                   => "first name",
+        "last_name"                    => "last name",
+        "email"                        => "email",
+        "phone"                        => "phone",
+        "address_line_1"               => "street",
+        "address_line_2"               => "number",
+        "zip_code"                     => "zip code",
+        "city"                         => "city",
+        "region"                       => "region",
+        "plot_number"                  => "plot number",
+        "country"                      => "country",
+        "distance"                     => "distance",
     ),
 ];

@@ -23,6 +23,10 @@ return [
         "cladding_type_create"      => "typ-oplasteni.create",
         "cladding_type_edit"        => "typ-oplasteni.edit",
 
+        //contact
+        "contact_create"            => "kontakt.create",
+        "contact_edit"              => "kontakt.edit",
+
     ),
     "text"   => array(
 
@@ -96,5 +100,22 @@ return [
 
         // cladding type
         "cladding_type"                => "typ opláštění",
+
+        //contact
+        "contact"                      => "kontakt",
+        "address"                      => "adresa",
+        "company"                      => "firma",
+        "first_name"                   => "jméno",
+        "last_name"                    => "příjmení",
+        "email"                        => "email",
+        "phone"                        => "telefon",
+        "address_line_1"               => "ulice",
+        "address_line_2"               => "číslo",
+        "zip_code"                     => "psč",
+        "city"                         => "město",
+        "region"                       => "okres",
+        "plot_number"                  => "číslo pozemku",
+        "country"                      => "země",
+        "distance"                     => "vzdálenost",
     ),
 ];
