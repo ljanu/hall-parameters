@@ -48,7 +48,7 @@ class HallParametersServiceProvider extends ServiceProvider
         );
 
         //setting form
-        $this->publishes([__DIR__ . 'resources/data' => resource_path("data")
+        $this->publishes([__DIR__ . '/resources/data' => resource_path("data")
         ], 'setting-form'
         );
 
