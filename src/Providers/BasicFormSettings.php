@@ -28,7 +28,7 @@ class BasicFormSettings
 
 
 
-
+// ------------------- limitations ------------------------------------------
 
     /**
      * @return float
@@ -109,9 +109,9 @@ class BasicFormSettings
     /**
      * @return float
      */
-    public function minRoofPitch(): float
+    public function minRoofPitchGable(): float
     {
-        return $this->limitations->minRoofPitch;
+        return $this->limitations->minRoofPitchGable;
     }
 
 
@@ -121,9 +121,30 @@ class BasicFormSettings
     /**
      * @return float
      */
-    public function maxRoofPitch(): float
+    public function maxRoofPitchGable(): float
     {
-        return $this->limitations->maxRoofPitch;
+        return $this->limitations->maxRoofPitchGable;
+    }
+
+
+    /**
+     * @return float
+     */
+    public function minRoofPitchFlat(): float
+    {
+        return $this->limitations->minRoofPitchFlat;
+    }
+
+
+
+
+
+    /**
+     * @return float
+     */
+    public function maxRoofPitchFlat(): float
+    {
+        return $this->limitations->maxRoofPitchFlat;
     }
 
 
@@ -200,7 +221,7 @@ class BasicFormSettings
 
 
 
-
+//----------------- basic dimension ------------------------------------------
 
     /**
      * @return float
