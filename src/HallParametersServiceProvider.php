@@ -49,7 +49,7 @@ class HallParametersServiceProvider extends ServiceProvider
 
         //setting form
         $this->publishes([__DIR__ . 'resources/data' => resource_path("data")
-        ], 'setting-from'
+        ], 'setting-form'
         );
 
         $this->publishes([__DIR__ . '/config/hall_parameters.php' => config_path('hall_parameters.php')],
