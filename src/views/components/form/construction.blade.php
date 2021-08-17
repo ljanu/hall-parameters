@@ -1,6 +1,7 @@
 {{-- component html form construction --}}
 @props([
-    'method' => $method
+    'method' => $method,
+    "basicSetting" => new \Tudy\HallParameters\Providers\BasicFormSettings(),
 ])
 
 {{-- component wraper --}}
@@ -46,8 +47,7 @@
 
 
             {{-- limitations --}}
-            <x-hall-parameters::form.block.construction.limitations/>
-
+            <x-hall-parameters::form.block.construction.limitations />
 
 
             {{-- button --}}

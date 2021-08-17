@@ -1,0 +1,25 @@
+ {
+    "limitations": {
+        "minWidth": 6,
+        "maxWidth": 25,
+        "minLength": 6,
+        "maxLength": 80,
+        "minHeight": 3,
+        "maxHeight": 8,
+        "minRoofPitch": 2,
+        "maxRoofPitch": 35,
+        "maxModuleSize": 6,
+        "minModuleSize": 3,
+        "maxPurlinDistanceDimension": 1.7,
+        "minPurlinDistanceDimension": 1,
+        "maxDimensionSideRailDistance": 1.7,
+        "minDimensionSideRailDistance": 1
+    },
+    "basicDimension": {
+        "roofPitchGable": 11,
+        "roofPitchFlat": 5,
+        "moduleSize": 6,
+        "purlinDistanceDimension": 1.7,
+        "dimensionSideRailDistance": 1.7
+    }
+}

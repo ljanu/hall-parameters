@@ -1,4 +1,7 @@
 {{-- component construction limitations --}}
+@props([
+    "basicSetting" => new \Tudy\HallParameters\Providers\BasicFormSettings()
+])
 
 <fieldset class = "m-base" >
     <legend class = "m-title" >{{trans("t_h_p.text.limitations")}}</legend >
@@ -15,8 +18,7 @@
                 id = "roof_pitch"
                 name = "roof_pitch"
                 class = "w-36"
-                value = ""
-                min = "0"
+                value = "{{$basicSetting->roofPitchGable()}}"
         >
 
         {{-- max module --}}
@@ -28,8 +30,10 @@
                 id = "max_module"
                 name = "max_module"
                 class = "w-36"
-                value = ""
-                min = "0"
+                step="0.01"
+                value = "{{$basicSetting->moduleSize()}}"
+                min = "{{$basicSetting->minModuleSize()}}"
+                max="{{$basicSetting->maxModuleSize()}}"
         >
 
         {{-- max gap purlin --}}
@@ -41,9 +45,11 @@
                 id = "max_gap_purlin"
                 name = "max_gap_purlin"
                 class = "w-36"
-                value = ""
                 step = "0.01"
-                min = "0" >
+                value = "{{$basicSetting->purlinDistanceDimension()}}"
+                min = "{{$basicSetting->minPurlinDistanceDimension()}}"
+                max="{{$basicSetting->maxPurlinDistanceDimension()}}"
+        >
 
         {{-- max gap side rails --}}
         <label
@@ -54,9 +60,10 @@
                 id = "max_gap_side_rails"
                 name = "max_gap_side_rails"
                 class = "w-36"
-                value = ""
                 step = "0.01"
-                min = "0"
+                value = "{{$basicSetting->dimensionSideRailDistance()}}"
+                min = "{{$basicSetting->minDimensionSideRailDistance()}}"
+                max="{{$basicSetting->maxDimensionSideRailDistance()}}"
         >
 
     </div >

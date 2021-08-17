@@ -1,4 +1,7 @@
 {{-- component construction dimension --}}
+@props([
+    "basicSetting" => new \Tudy\HallParameters\Providers\BasicFormSettings(),
+])
 
 <fieldset class = "m-base " >
     <legend class = "m-title" >{{trans("t_h_p.text.dimension")}}</legend >
@@ -25,12 +28,13 @@
                     placeholder = "{{trans("t_h_p.text.width")}} (m)"
                     value = ""
                     step = "0.01"
-                    min = "0"
+                    min = "{{$basicSetting->minWidth()}}"
+                    max="{{$basicSetting->maxWidth()}}"
             >
 
         </div >
 
-        {{-- lenght --}}
+        {{-- length --}}
         <div class = "flex flex-row" >
 
             <label for = "length" >
@@ -48,7 +52,8 @@
                     placeholder = "{{trans("t_h_p.text.length")}} (m)"
                     value = ""
                     step = "0.01"
-                    min = "0"
+                    min = "{{$basicSetting->minLength()}}"
+                    max="{{$basicSetting->maxLength()}}"
             >
 
         </div >
@@ -69,7 +74,8 @@
                     placeholder = "{{trans("t_h_p.text.height")}} (m)"
                     value = ""
                     step = "0.01"
-                    min = "0"
+                    min = "{{$basicSetting->minHeight()}}"
+                    max="{{$basicSetting->maxHeight()}}"
             >
 
         </div >
