@@ -20,7 +20,7 @@ class BasicFormSettings
 
     public function __construct()
     {
-        $path                 = base_path("tudy/hall-parameters/src/config/form-settings.json");
+        $path                 = resource_path("data/form-settings.json");
         $json                 = json_decode(file_get_contents($path));
         $this->limitations    = $json->limitations;
         $this->basicDimension = $json->basicDimension;

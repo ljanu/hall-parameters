@@ -47,6 +47,9 @@ class HallParametersServiceProvider extends ServiceProvider
             'lang'
         );
 
+        //setting form
+        $this->publishes([__DIR__.'resources/data' =>resource_path("data")]);
+
         $this->publishes([__DIR__ . '/config/hall_parameters.php' => config_path('hall_parameters.php')],
             'config');
 
