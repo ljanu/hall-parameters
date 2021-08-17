@@ -14,11 +14,13 @@
                 for = "roof_pitch"
                 class = "text-right self-center" >{{trans("t_h_p.text.roof_pitch")}}</label >
         <input
+                x-bind:value="roofPitch"
                 type = "number"
                 id = "roof_pitch"
                 name = "roof_pitch"
                 class = "w-36"
-                value = "{{$basicSetting->roofPitchGable()}}"
+{{--                value = "{{$basicSetting->roofPitchGable()}}"--}}
+                min="2" {{-- todo min a max uhel --}}
         >
 
         {{-- max module --}}

@@ -1,4 +1,7 @@
 {{-- component roof type --}}
+@props([
+    "basicSetting" => new \Tudy\HallParameters\Providers\BasicFormSettings()
+])
 
 <fieldset class = "m-base" >
     <legend class = "m-title" >{{trans("t_h_p.text.roof_type")}}</legend >
@@ -16,6 +19,7 @@
                         alt = "{{trans("t_h_p.text.gable_roof")}}" >
 
             <input
+                    x-on:click = "roofPitch = {{$basicSetting->roofPitchGable()}}"
                     type = "radio"
                     id = "gable_roof"
                     class = "self-center"
@@ -35,6 +39,7 @@
                         src = "{{asset('images/hall-parameters/flat-left-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_left")}}" >
                 <input
+                        x-on:click = "roofPitch = {{$basicSetting->roofPitchFlat()}}"
                         type = "radio"
                         id = "flat_left_roof"
                         class = "self-center"
@@ -48,6 +53,7 @@
         {{-- flat roof right --}}
         <div >
             <label
+                    x-on:click = "roofPitch = {{$basicSetting->roofPitchFlat()}}"
                     for = "flat_right_roof"
                     class = "text-right self-center" >
                 <img
