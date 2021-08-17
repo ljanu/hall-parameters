@@ -29,7 +29,12 @@
     <div class = "py-5 flex justify-center text-center " >
 
         {{-- form --}}
-        <form  x-data="{roofPitch: {{$basicSetting->roofPitchGable()}}}"
+        <form
+                x-data = "{
+                        roofPitch: {{$basicSetting->roofPitchGable()}},
+                        minRoofPitch: {{$basicSetting->minRoofPitchGable()}},
+                        maxRoofPitch: {{$basicSetting->maxRoofPitchGable()}}
+                        }"
                 action = "{{route('construction.store')}}"
                 id = "form-construction"
                 method = "post" >
