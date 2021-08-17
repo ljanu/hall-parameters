@@ -18,14 +18,18 @@
                         src = "{{asset('images/hall-parameters/gable-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.gable_roof")}}" >
 
-            <input
-                    x-on:click = "roofPitch = {{$basicSetting->roofPitchGable()}}"
-                    type = "radio"
-                    id = "gable_roof"
-                    class = "self-center"
-                    name = "roof_type"
-                    value = "gable_roof"
-                    checked = "checked" >
+                <input
+                        x-on:click = "
+                                roofPitch = {{$basicSetting->roofPitchGable()}}
+                                minRoofPitch = {{$basicSetting->minRoofPitchGable()}}
+                                maxRoofPitch = {{$basicSetting->maxRoofPitchGable()}}
+                                "
+                        type = "radio"
+                        id = "gable_roof"
+                        class = "self-center"
+                        name = "roof_type"
+                        value = "gable_roof"
+                        checked = "checked" >
 
             </label >
         </div >
@@ -39,7 +43,11 @@
                         src = "{{asset('images/hall-parameters/flat-left-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_left")}}" >
                 <input
-                        x-on:click = "roofPitch = {{$basicSetting->roofPitchFlat()}}"
+                        x-on:click = "
+                                roofPitch = {{$basicSetting->roofPitchFlat()}}
+                                minRoofPitch = {{$basicSetting->minRoofPitchFlat()}}
+                                maxRoofPitch = {{$basicSetting->maxRoofPitchFlat()}}
+                                "
                         type = "radio"
                         id = "flat_left_roof"
                         class = "self-center"
@@ -53,13 +61,17 @@
         {{-- flat roof right --}}
         <div >
             <label
-                    x-on:click = "roofPitch = {{$basicSetting->roofPitchFlat()}}"
                     for = "flat_right_roof"
                     class = "text-right self-center" >
                 <img
                         src = "{{asset('images/hall-parameters/flat-right-roof.svg')}}"
                         alt = "{{trans("t_h_p.text.flat_roof_right")}}" >
                 <input
+                        x-on:click = "
+                                roofPitch = {{$basicSetting->roofPitchFlat()}}
+                                minRoofPitch = {{$basicSetting->minRoofPitchFlat()}}
+                                maxRoofPitch = {{$basicSetting->maxRoofPitchFlat()}}
+                                "
                         id = "flat_right_roof"
                         class = "self-center"
                         type = "radio"
