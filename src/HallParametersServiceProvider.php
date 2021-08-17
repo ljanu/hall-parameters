@@ -48,14 +48,18 @@ class HallParametersServiceProvider extends ServiceProvider
         );
 
         //setting form
-        $this->publishes([__DIR__.'resources/data' =>resource_path("data")]);
+        $this->publishes([__DIR__ . 'resources/data' => resource_path("data")
+        ], 'setting-from'
+        );
 
         $this->publishes([__DIR__ . '/config/hall_parameters.php' => config_path('hall_parameters.php')],
             'config');
 
-        $this->publishes([__DIR__.'/resources/images/hall-parameters/' =>
-                              public_path('images/hall-parameters/')],
-        'icons');
+        $this->publishes([
+            __DIR__ . '/resources/images/hall-parameters/' =>
+                public_path('images/hall-parameters/'),
+        ],
+            'icons');
 
     }
 
