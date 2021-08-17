@@ -211,6 +211,15 @@ class BasicFormSettings
     }
 
 
+    /**
+     * @return float
+     */
+    public function roofPitchFlat(): float
+    {
+        return $this->basicDimension->roofPitchFlat;
+    }
+
+
 
 
 
