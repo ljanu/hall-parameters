@@ -39,6 +39,7 @@ class HallParametersServiceProvider extends ServiceProvider
 
         //register configuration
         $this->mergeConfigFrom(__DIR__ . '/config/hall_parameters.php', 'config_hall');
+        $this->mergeConfigFrom(__DIR__ . '/config/form-settings.json', 'form-setting');
 
         //register translate
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'hall-parameters');
