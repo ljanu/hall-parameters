@@ -1,58 +1,106 @@
 {{-- comoponent general type cladding and insulated--}}
 
 {{-- general type cladding --}}
-<fieldset class = "m-base grid grid-cols-2" >
-    <legend class = "m-title" >{{trans("t_h_p.text.general_type_cladding")}}</legend >
+<x-hall-parameters::helpers.form-fieldset
+        :legend="trans('t_h_p.text.general_type_cladding')">
+    <x-slot name="content">
 
-    {{-- roof --}}
-    <label
-            for = "general_type_roof"
-            class = "text-right self-center" >{{trans("t_h_p.text.roof")}}</label >
-    <select
-            name = "general_type_roof"
-            id = "general_type_roof" >
+        {{-- roof --}}
+        <x-hall-parameters::helpers.form-item>
 
-        <option value = "pir" >Pir panel</option >
-        <option value = "mineral" >Mineral panel</option >
-        <option value = "folded cladding" >Složený plášť</option >
-        <option value = "Trapezoidal metal sheet" >Trapezový plech</option >
-        <option value = "without cladding" >bez opláštění</option >
-    </select >
+            <x-slot name="label">
 
-    {{-- wall --}}
-    <label
-            for = "general_type_wall"
-            class = "text-right self-center" >{{trans("t_h_p.text.wall")}}</label >
-    <select
-            name = "general_type_wall"
-            id = "general_type_wall" >
+                <label for = "general_type_roof">
+                    {{trans("t_h_p.text.roof")}}
+                </label >
 
-        <option value = "pir" >Pir panel</option >
-        <option value = "mineral" >Mineral panel</option >
-        <option value = "folded cladding" >Složený plášť</option >
-        <option value = "Trapezoidal metal sheet" >Trapezový plech</option >
-        <option value = "without cladding" >bez opláštění</option >
-    </select >
+            </x-slot>
 
-</fieldset >
+            <x-slot name="input">
 
+                <select
+                        name = "general_type_roof"
+                        id = "general_type_roof"
+                        class="w-full"
+                >
+
+                    <option value = "pir" >Pir panel</option >
+                    <option value = "mineral" >Mineral panel</option >
+                    <option value = "folded cladding" >Složený plášť</option >
+                    <option value = "Trapezoidal metal sheet" >Trapezový plech</option >
+                    <option value = "without cladding" >bez opláštění</option >
+                </select >
+
+            </x-slot>
+
+        </x-hall-parameters::helpers.form-item>
+
+
+        {{-- wall --}}
+        <x-hall-parameters::helpers.form-item>
+
+            <x-slot name="label">
+
+                <label for = "general_type_wall">
+                    {{trans("t_h_p.text.wall")}}
+                </label >
+
+            </x-slot>
+
+            <x-slot name="input">
+
+                <select
+                        name = "general_type_wall"
+                        id = "general_type_wall"
+                        class="w-full"
+                >
+
+                    <option value = "pir" >Pir panel</option >
+                    <option value = "mineral" >Mineral panel</option >
+                    <option value = "folded cladding" >Složený plášť</option >
+                    <option value = "Trapezoidal metal sheet" >Trapezový plech</option >
+                    <option value = "without cladding" >bez opláštění</option >
+
+                </select >
+
+            </x-slot>
+        </x-hall-parameters::helpers.form-item>
+
+    </x-slot>
+
+</x-hall-parameters::helpers.form-fieldset>
 
 {{-- insulated --}}
-<fieldset class="m-base" >
-    <legend class = "m-title" >{{trans("t_h_p.text.insulated")}}</legend >
+<x-hall-parameters::helpers.form-fieldset :legend="trans('t_h_p.text.insulated')">
+    
+    <x-slot name="content">
 
-    <label
-            for = "insulated"
-            class = "text-right self-center" >{{trans("t_h_p.text.insulated")}}
-    </label >
+        <x-hall-parameters::helpers.form-item>
 
-    <select
-            name = "insulated"
-            id = "insulated"
-            class = "w-56"
-    >
-        <option value = "yes" >{{trans("t_h_p.text.yes")}}</option >
-        <option value = "no" >{{trans("t_h_p.text.no")}}</option >
-    </select >
+            <x-slot name="label">
 
-</fieldset >
+                <label
+                        for = "insulated"
+                        class = "text-right self-center" >{{trans("t_h_p.text.insulated")}}
+                </label >
+
+            </x-slot>
+
+            <x-slot name="input">
+
+                <select
+                        name = "insulated"
+                        id = "insulated"
+                        class = "w-56"
+                >
+
+                    <option value = "yes" >{{trans("t_h_p.text.yes")}}</option >
+                    <option value = "no" >{{trans("t_h_p.text.no")}}</option >
+                </select >
+
+            </x-slot>
+        </x-hall-parameters::helpers.form-item>
+
+    </x-slot>
+
+</x-hall-parameters::helpers.form-fieldset>
