@@ -3,71 +3,104 @@
     "basicSetting" => new \Tudy\HallParameters\Providers\BasicFormSettings()
 ])
 
-<fieldset class = "m-base" >
-    <legend class = "m-title" >{{trans("t_h_p.text.limitations")}}</legend >
-
-    {{-- limitations --}}
-    <div class = "grid grid-cols-2" >
+<x-hall-parameters::helpers.form-fieldset :legend="trans('t_h_p.text.limitations')">
+    <x-slot name="content">
 
         {{-- roof pitch --}}
-        <label
-                for = "roof_pitch"
-                class = "text-right self-center" >{{trans("t_h_p.text.roof_pitch")}}</label >
-        <input
-                x-bind:value="roofPitch"
-                x-bind:min="minRoofPitch"
-                x-bind:max="maxRoofPitch"
-                type = "number"
-                id = "roof_pitch"
-                name = "roof_pitch"
-                class = "w-36"
-        >
+        <x-hall-parameters::helpers.form-item>
+
+            <x-slot name="label">
+                <label for = "roof_pitch">
+                    {{trans("t_h_p.text.roof_pitch")}}
+                </label >
+            </x-slot>
+
+            <x-slot name="input">
+                <input
+                        x-bind:value="roofPitch"
+                        x-bind:min="minRoofPitch"
+                        x-bind:max="maxRoofPitch"
+                        type = "number"
+                        id = "roof_pitch"
+                        name = "roof_pitch"
+                        class = "w-full"
+                >
+            </x-slot>
+
+        </x-hall-parameters::helpers.form-item>
 
         {{-- max module --}}
-        <label
-                for = "max_module"
-                class = "text-right self-center" >{{trans("t_h_p.text.max_module_size")}}</label >
-        <input
-                type = "number"
-                id = "max_module"
-                name = "max_module"
-                class = "w-36"
-                step="0.01"
-                value = "{{$basicSetting->moduleSize()}}"
-                min = "{{$basicSetting->minModuleSize()}}"
-                max="{{$basicSetting->maxModuleSize()}}"
-        >
+        <x-hall-parameters::helpers.form-item>
+
+            <x-slot name="label">
+                <label for = "max_module">
+                    {{trans("t_h_p.text.max_module_size")}}
+                </label >
+
+            </x-slot>
+
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "max_module"
+                        name = "max_module"
+                        class = "w-full"
+                        step="0.01"
+                        value = "{{$basicSetting->moduleSize()}}"
+                        min = "{{$basicSetting->minModuleSize()}}"
+                        max="{{$basicSetting->maxModuleSize()}}"
+                >
+            </x-slot>
+
+        </x-hall-parameters::helpers.form-item>
 
         {{-- max gap purlin --}}
-        <label
-                for = "max_gap_purlin"
-                class = "text-right self-center" >{{trans("t_h_p.text.max_purlin_size")}}</label >
-        <input
-                type = "number"
-                id = "max_gap_purlin"
-                name = "max_gap_purlin"
-                class = "w-36"
-                step = "0.01"
-                value = "{{$basicSetting->purlinDistanceDimension()}}"
-                min = "{{$basicSetting->minPurlinDistanceDimension()}}"
-                max="{{$basicSetting->maxPurlinDistanceDimension()}}"
-        >
+        <x-hall-parameters::helpers.form-item>
+
+            <x-slot name="label">
+                <label for = "max_gap_purlin">
+                    {{trans("t_h_p.text.max_purlin_size")}}
+                </label >
+            </x-slot>
+
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "max_gap_purlin"
+                        name = "max_gap_purlin"
+                        class = "w-full"
+                        step = "0.01"
+                        value = "{{$basicSetting->purlinDistanceDimension()}}"
+                        min = "{{$basicSetting->minPurlinDistanceDimension()}}"
+                        max="{{$basicSetting->maxPurlinDistanceDimension()}}"
+                >
+            </x-slot>
+
+        </x-hall-parameters::helpers.form-item>
 
         {{-- max gap side rails --}}
-        <label
-                for = "max_gap_side_rails"
-                class = "text-right self-center" >{{trans("t_h_p.text.max_side_rails_size")}}</label >
-        <input
-                type = "number"
-                id = "max_gap_side_rails"
-                name = "max_gap_side_rails"
-                class = "w-36"
-                step = "0.01"
-                value = "{{$basicSetting->dimensionSideRailDistance()}}"
-                min = "{{$basicSetting->minDimensionSideRailDistance()}}"
-                max="{{$basicSetting->maxDimensionSideRailDistance()}}"
-        >
+        <x-hall-parameters::helpers.form-item>
 
-    </div >
+            <x-slot name="label">
+                <label for = "max_gap_side_rails">
+                    {{trans("t_h_p.text.max_side_rails_size")}}
+                </label >
+            </x-slot>
 
-</fieldset >
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "max_gap_side_rails"
+                        name = "max_gap_side_rails"
+                        class = "w-full"
+                        step = "0.01"
+                        value = "{{$basicSetting->dimensionSideRailDistance()}}"
+                        min = "{{$basicSetting->minDimensionSideRailDistance()}}"
+                        max="{{$basicSetting->maxDimensionSideRailDistance()}}"
+                >
+            </x-slot>
+
+        </x-hall-parameters::helpers.form-item>
+
+    </x-slot>
+</x-hall-parameters::helpers.form-fieldset>
