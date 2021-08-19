@@ -35,7 +35,6 @@
             {{-- foundation --}}
             <x-hall-parameters::form.block.specification.foundation />
 
-
             {{-- fire resistance --}}
             <x-hall-parameters::form.block.specification.fire-resistance />
 

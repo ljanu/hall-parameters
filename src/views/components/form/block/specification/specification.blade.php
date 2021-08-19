@@ -1,7 +1,6 @@
 {{-- component specification --}}
 
-<x-hall-parameters::helpers.form-fieldset
-:legend="trans('t_h_p.text.specification')">
+<x-hall-parameters::helpers.form-fieldset :legend="trans('t_h_p.text.specification')">
     
     <x-slot name="content">
 
