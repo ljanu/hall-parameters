@@ -1,56 +1,75 @@
 {{-- component fire resistance --}}
 
-<fieldset class="m-base" >
-    <legend class = "m-title" >{{trans("t_h_p.text.fire_resistance")}}</legend>
+<x-hall-parameters::helpers.form-fieldset :legend="trans('t_h_p.text.fire_resistance')">
+    <x-slot name="content">
 
-    <div class = "m-base grid grid-cols-2 self-center" >
+        {{-- fire resitence construciton --}}
+        <x-hall-parameters::helpers.form-item>
 
-        {{--  fire resistance construction --}}
-        <label
-                for = "fire_resistance_construction"
-                class = "text-right self-center" > {{trans("t_h_p.text.fire_resistance_construction")}}
-        </label >
+            <x-slot name="label">
+                <label for = "fire_resistance_construction">
+                    {{trans("t_h_p.text.fire_resistance_construction")}}
+                </label >
+            </x-slot>
 
-        <input
-                type = "number"
-                id = "fire_resistance_construction"
-                name = "fire_resistance_construction"
-                autofocus
-                class = "w-56"
-                value = ""
-        >
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "fire_resistance_construction"
+                        name = "fire_resistance_construction"
+                        autofocus
+                        class = "w-56"
+                        value = ""
+                >
+            </x-slot>
 
-        {{--  fire resistance roof --}}
-        <label
-                for = "fire_resistance_roof"
-                class = "text-right self-center" > {{trans("t_h_p.text.fire_resistance_roof")}}
-        </label >
+        </x-hall-parameters::helpers.form-item>
 
-        <input
-                type = "number"
-                id = "fire_resistance_roof"
-                name = "fire_resistance_roof"
-                autofocus
-                class = "w-56"
-                value = ""
-                min="0"
-        >
+        {{-- fire resistence roof --}}
+        <x-hall-parameters::helpers.form-item>
 
-        {{--  fire resistance walls --}}
-        <label
-                for = "fire_resistance_walls"
-                class = "text-right self-center" > {{trans("t_h_p.text.fire_resistance_walls")}}
-        </label >
+            <x-slot name="label">
+                <label for = "fire_resistance_roof">
+                    {{trans("t_h_p.text.fire_resistance_roof")}}
+                </label >
+            </x-slot>
 
-        <input
-                type = "number"
-                id = "fire_resistance_walls"
-                name = "fire_resistance_walls"
-                autofocus
-                class = "w-56"
-                value = ""
-                min="0"
-        >
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "fire_resistance_roof"
+                        name = "fire_resistance_roof"
+                        autofocus
+                        class = "w-56"
+                        value = ""
+                        min="0"
+                >
+            </x-slot>
 
-    </div >
-</fieldset >
+        </x-hall-parameters::helpers.form-item>
+
+        {{-- fire resistence wals --}}
+        <x-hall-parameters::helpers.form-item>
+
+            <x-slot name="label">
+                <label for = "fire_resistance_walls">
+                    {{trans("t_h_p.text.fire_resistance_walls")}}
+                </label >
+            </x-slot>
+
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "fire_resistance_walls"
+                        name = "fire_resistance_walls"
+                        autofocus
+                        class = "w-56"
+                        value = ""
+                        min="0"
+                >
+            </x-slot>
+
+        </x-hall-parameters::helpers.form-item>
+
+    </x-slot>
+</x-hall-parameters::helpers.form-fieldset>
