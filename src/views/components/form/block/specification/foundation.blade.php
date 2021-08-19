@@ -1,44 +1,55 @@
 {{-- component foundation of the building --}}
 
-<fieldset class="m-base" >
+<x-hall-parameters::helpers.form-fieldset :legend="trans('t_h_p.text.foundation_build')">
+    <x-slot name="content">
 
-    <legend class = "m-title" >{{trans("t_h_p.text.foundation_build")}}</legend >
-
-    <div class = "m-base grid grid-cols-2 self-center" >
         {{-- height floor --}}
-        <label
-                for = "height_floor"
-                class = "text-right self-center" >{{trans("t_h_p.text.height_floor")}}
-        </label >
+        <x-hall-parameters::helpers.form-item>
 
-        <input
-                type = "number"
-                id = "height_floor"
-                name = "height_floor"
-                autofocus
-                class = "w-56"
-                value = ""
-                step = "0.01"
-                min="0"
-        >
+            <x-slot name="label">
+                <label for = "height_floor">
+                    {{trans("t_h_p.text.height_floor")}}
+                </label >
+            </x-slot>
 
-        {{-- bottom edge facade --}}
-        <label
-                for = "bottom_edge_facade"
-                class = "text-right self-center" > {{trans("t_h_p.text.bottom_edge_facade")}}
-        </label >
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "height_floor"
+                        name = "height_floor"
+                        autofocus
+                        class = "w-56"
+                        value = ""
+                        step = "0.01"
+                        min="0"
+                >
+            </x-slot>
 
-        <input
-                type = "number"
-                id = "bottom_edge_facade"
-                name = "bottom_edge_facade"
-                autofocus
-                class = "w-56"
-                value = ""
-                step = "0.01"
-                min="0"
-        >
+        </x-hall-parameters::helpers.form-item>
 
-    </div >
+        {{-- buttom edge facade --}}
+        <x-hall-parameters::helpers.form-item>
 
-</fieldset >
+            <x-slot name="label">
+                <label for = "bottom_edge_facade">
+                    {{trans("t_h_p.text.bottom_edge_facade")}}
+                </label >
+            </x-slot>
+
+            <x-slot name="input">
+                <input
+                        type = "number"
+                        id = "bottom_edge_facade"
+                        name = "bottom_edge_facade"
+                        autofocus
+                        class = "w-56"
+                        value = ""
+                        step = "0.01"
+                        min="0"
+                >
+            </x-slot>
+
+        </x-hall-parameters::helpers.form-item>
+
+    </x-slot>
+</x-hall-parameters::helpers.form-fieldset>
