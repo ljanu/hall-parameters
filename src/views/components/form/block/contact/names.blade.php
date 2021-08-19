@@ -1,52 +1,107 @@
 {{-- component names contact --}}
 
-<fieldset class = "m-base grid grid-cols-2" >
-    <legend class = "m-title" >{{trans("t_h_p.text.contact")}}</legend >
+<x-hall-parameters::helpers.form-fieldset :legend = "trans('t_h_p.text.contact')" >
+    <x-slot name = "content" >
 
-    {{-- company --}}
-    <label class="text-right self-center" for = "company" > {{trans("t_h_p.text.company")}}</label >
+        {{-- company --}}
+        <x-hall-parameters::helpers.form-item >
 
-    <input
-            type = "text"
-            name = "company"
-            id = "company"
-    >
+            <x-slot name = "label" >
+                <label for = "company" >
+                    {{trans("t_h_p.text.company")}}
+                </label >
+            </x-slot >
 
-    {{-- first name --}}
-    <label class="text-right self-center" for = "first_name" > {{trans("t_h_p.text.first_name")}}</label >
+            <x-slot name = "input" >
+                <input
+                        type = "text"
+                        name = "company"
+                        id = "company"
+                        class = "w-full"
+                >
+            </x-slot >
 
-    <input
-            type = "text"
-            name = "first_name"
-            id = "first_name"
-    >
+        </x-hall-parameters::helpers.form-item >
 
-    {{-- lasta name --}}
-    <label class="text-right self-center" for = "last_name" > {{trans("t_h_p.text.last_name")}}</label >
+        {{-- first name --}}
+        <x-hall-parameters::helpers.form-item >
 
-    <input
-            type = "text"
-            name = "last_name"
-            id = "last_name"
-    >
+            <x-slot name = "label" >
+                <label for = "first_name" >
+                    {{trans("t_h_p.text.first_name")}}
+                </label >
+            </x-slot >
 
-    {{-- email --}}
-    <label class="text-right self-center" for = "email" > {{trans("t_h_p.text.email")}}</label >
+            <x-slot name = "input" >
+                <input
+                        type = "text"
+                        name = "first_name"
+                        id = "first_name"
+                        class = "w-full"
+                >
+            </x-slot >
 
-    <input
-            type = "email"
-            name = "email"
-            id = "email"
-    >
+        </x-hall-parameters::helpers.form-item >
 
-    {{-- phone --}}
-    <label class="text-right self-center" for = "phone" > {{trans("t_h_p.text.phone")}}</label >
+        {{-- last name --}}
+        <x-hall-parameters::helpers.form-item >
 
-    <input
-            type = "text"
-            name = "phone"
-            id = "phone"
-    >
+            <x-slot name = "label" >
+                <label for = "last_name" >
+                    {{trans("t_h_p.text.last_name")}}
+                </label >
+            </x-slot >
 
+            <x-slot name = "input" >
+                <input
+                        type = "text"
+                        name = "last_name"
+                        id = "last_name"
+                        class = "w-full"
+                >
+            </x-slot >
 
-</fieldset >
+        </x-hall-parameters::helpers.form-item >
+
+        {{-- email --}}
+        <x-hall-parameters::helpers.form-item >
+
+            <x-slot name = "label" >
+                <label for = "email" >
+                    {{trans("t_h_p.text.email")}}
+                </label >
+            </x-slot >
+
+            <x-slot name = "input" >
+                <input
+                        type = "email"
+                        name = "email"
+                        id = "email"
+                        class = "w-full"
+                >
+            </x-slot >
+
+        </x-hall-parameters::helpers.form-item >
+
+        {{-- phone --}}
+        <x-hall-parameters::helpers.form-item >
+
+            <x-slot name = "label" >
+                <label for = "phone" >
+                    {{trans("t_h_p.text.phone")}}
+                </label >
+            </x-slot >
+
+            <x-slot name = "input" >
+                <input
+                        type = "text"
+                        name = "phone"
+                        id = "phone"
+                        class = "w-full"
+                >
+            </x-slot >
+
+        </x-hall-parameters::helpers.form-item >
+
+    </x-slot >
+</x-hall-parameters::helpers.form-fieldset >
