@@ -91,7 +91,7 @@
                 <select
                         name = "insulated"
                         id = "insulated"
-                        class = "w-56"
+                        class = "w-full"
                 >
 
                     <option value = "yes" >{{trans("t_h_p.text.yes")}}</option >

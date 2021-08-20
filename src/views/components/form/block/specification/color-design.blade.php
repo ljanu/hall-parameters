@@ -21,7 +21,7 @@
                 <select
                         name = "color_roof"
                         id = "color_roof"
-                        class = "w-56"
+                        class = "w-full"
                 >
                     @foreach ($colorsCladding as $color)
                         <option
@@ -46,7 +46,7 @@
                 <select
                         name = "color_walls"
                         id = "color_walls"
-                        class = "w-56"
+                        class = "w-full"
                 >
                     @foreach ($colorsCladding as $color)
                         <option
@@ -71,7 +71,7 @@
                 <select
                         name = "color_fill"
                         id = "color_fill"
-                        class = "w-56"
+                        class = "w-full"
                 >
                     @foreach ($colorsCladding as $color)
                         <option
@@ -96,7 +96,7 @@
                 <select
                         name = "color_edges"
                         id = "color_edges"
-                        class = "w-56"
+                        class = "w-full"
                 >
                     @foreach ($colorsCladding as $color)
                         <option
@@ -122,7 +122,7 @@
                 <select
                         name = "color_construction"
                         id = "color_construction"
-                        class = "w-56"
+                        class = "w-full"
                 >
                     <option value = "7035" >RAL 7038</option >
                 </select >

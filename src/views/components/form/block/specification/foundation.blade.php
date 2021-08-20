@@ -18,7 +18,7 @@
                         id = "height_floor"
                         name = "height_floor"
                         autofocus
-                        class = "w-56"
+                        class = "w-full"
                         value = ""
                         step = "0.01"
                         min="0"
@@ -42,7 +42,7 @@
                         id = "bottom_edge_facade"
                         name = "bottom_edge_facade"
                         autofocus
-                        class = "w-56"
+                        class = "w-full"
                         value = ""
                         step = "0.01"
                         min="0"

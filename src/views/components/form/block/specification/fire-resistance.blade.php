@@ -18,7 +18,7 @@
                         id = "fire_resistance_construction"
                         name = "fire_resistance_construction"
                         autofocus
-                        class = "w-56"
+                        class = "w-full"
                         value = ""
                 >
             </x-slot>
@@ -40,7 +40,7 @@
                         id = "fire_resistance_roof"
                         name = "fire_resistance_roof"
                         autofocus
-                        class = "w-56"
+                        class = "w-full"
                         value = ""
                         min="0"
                 >
@@ -63,7 +63,7 @@
                         id = "fire_resistance_walls"
                         name = "fire_resistance_walls"
                         autofocus
-                        class = "w-56"
+                        class = "w-full"
                         value = ""
                         min="0"
                 >
