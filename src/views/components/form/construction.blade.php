@@ -58,7 +58,8 @@
             {{-- button --}}
             <button
                     class = "my-10"
-                    type = "submit" >{{trans("t_h_p.text.save")}}</button >
+                    type = "submit" >{{trans("t_h_p.text.save")}}
+            </button >
 
         </form >
     </div >
